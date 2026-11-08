@@ -33,13 +33,20 @@ Requires Node.js 20. If you use [mise](https://mise.jdx.dev/), run `mise install
 
 ### Regenerating the charts
 
-Nine slides use a chart on the right-hand card. They are hand-authored SVG, not screenshots, so they stay sharp at any projection size:
+Nine slides use a chart on the right-hand card. Each language has its own chart set, so labels and decimal separators match the deck:
+
+| Path | Language |
+|---|---|
+| `slides/images/charts/en/` | English labels, `69.3%` |
+| `slides/images/charts/vi/` | Vietnamese labels, `69,3%` |
+
+They are hand-authored SVG, not screenshots, so they stay sharp at any projection size:
 
 ```sh
 python3 scripts/create-charts.py
 ```
 
-These are the only generated assets committed to the repository. Edit the chart source, not the `.svg` files.
+The script writes both sets. Edit the chart source and the `STRINGS` table in that file, never the `.svg` files.
 
 | Output | Language |
 |---|---|

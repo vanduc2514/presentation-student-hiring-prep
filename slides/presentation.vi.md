@@ -85,7 +85,7 @@ Tên bạn · Tech Talk · 2026
 - Vị trí senior chiếm **69,3%** thị trường
 - Entry-level giảm **6,3%** trong khi senior tăng **13,5%**
 
-![Tỷ trọng tin tuyển phần mềm theo cấp bậc](images/charts/05-posting-mix.svg)
+![Tỷ trọng tin tuyển phần mềm theo cấp bậc](images/charts/vi/05-posting-mix.svg)
 
 <!-- SPEAKER NOTES — Slide 5 (~3 phút)
 - Nguồn: Indeed Hiring Lab, quý 1/2026. Vị trí senior chiếm 69,3% tin tuyển phần mềm; entry-level còn 4,5%.
@@ -106,7 +106,7 @@ Tên bạn · Tech Talk · 2026
 
 **Công việc dịch lên trên. Nó không biến mất.**
 
-![Thay đổi việc làm giữa lao động trẻ và lao động có kinh nghiệm](images/charts/06-cohort-split.svg)
+![Thay đổi việc làm giữa lao động trẻ và lao động có kinh nghiệm](images/charts/vi/06-cohort-split.svg)
 
 <!-- SPEAKER NOTES — Slide 6 (~3 phút)
 - Đây là slide định khung lại toàn bộ buổi nói chuyện. Nếu chỉ mang về một slide, hãy mang slide này.
@@ -150,7 +150,7 @@ Tên bạn · Tech Talk · 2026
 
 **Tiêu chuẩn cao hơn. Cửa không đóng.**
 
-![Tăng trưởng nhân sự IT và lương fresher theo mảng](images/charts/08-vietnam-market.svg)
+![Tăng trưởng nhân sự IT và lương fresher theo mảng](images/charts/vi/08-vietnam-market.svg)
 
 <!-- SPEAKER NOTES — Slide 8 (~2 phút)
 - Cần cân bằng sau phần dữ liệu Mỹ. Báo cáo IT Salary & Recruitment Market 2025-2026 của ITviec khảo sát 1.839 người gồm nhân sự IT, freelancer, sinh viên, lãnh đạo HR và CxO.
@@ -173,7 +173,7 @@ Tên bạn · Tech Talk · 2026
 
 **Bạn không bị đánh giá. Bạn đang bị sắp xếp.**
 
-![Từ hồ sơ thu hẹp dần đến phỏng vấn và offer](images/charts/09-funnel.svg)
+![Từ hồ sơ thu hẹp dần đến phỏng vấn và offer](images/charts/vi/09-funnel.svg)
 
 <!-- SPEAKER NOTES — Slide 9 (~3 phút)
 - Đi qua phễu từ phía doanh nghiệp, vì đó là góc nhìn họ chưa từng thấy.
@@ -289,7 +289,7 @@ Tên bạn · Tech Talk · 2026
 - Vòng trực tiếp: **5%** vị trí → **30%**
 - **Hơn 25%** doanh nghiệp cho phép dùng AI khi thi kỹ thuật
 
-![AI xuất hiện trong vòng phỏng vấn như thế nào](images/charts/14-ai-interview.svg)
+![AI xuất hiện trong vòng phỏng vấn như thế nào](images/charts/vi/14-ai-interview.svg)
 
 <!-- SPEAKER NOTES — Slide 14 (~4 phút)
 - Sửa một hiểu nhầm phổ biến: doanh nghiệp không cố cấm AI. Họ cố tìm xem bạn có làm việc được khi AI sai hay không.
@@ -311,7 +311,7 @@ Tên bạn · Tech Talk · 2026
 
 **Đừng giấu việc dùng AI. Hãy làm từng dòng giải thích được.**
 
-![Tỷ lệ nhận nhầm của công cụ phát hiện văn bản AI](images/charts/15-detector-bias.svg)
+![Tỷ lệ nhận nhầm của công cụ phát hiện văn bản AI](images/charts/vi/15-detector-bias.svg)
 
 <!-- SPEAKER NOTES — Slide 15 (~3 phút)
 - Đây là slide quan trọng nhất với khán phòng này, và là điều họ sẽ không nghe ở chỗ khác.
@@ -332,7 +332,7 @@ Tên bạn · Tech Talk · 2026
 - Đọc code không phải do mình viết
 - Nộp thực tập ngay từ bây giờ
 
-![Tỷ lệ thực tập sinh được chuyển thành nhân viên chính thức](images/charts/16-intern-conversion.svg)
+![Tỷ lệ thực tập sinh được chuyển thành nhân viên chính thức](images/charts/vi/16-intern-conversion.svg)
 
 <!-- SPEAKER NOTES — Slide 16 (~4 phút)
 - Đổi giọng ở đây. Nửa đầu là chẩn đoán, nửa sau là đơn thuốc. Cụ thể và có mốc thời gian.
@@ -353,7 +353,7 @@ Tên bạn · Tech Talk · 2026
 - Mỗi vị trí một CV, không dùng một CV cho tất cả
 - Đưa dòng thực tập thành dòng mạnh nhất trên trang
 
-![Điều doanh nghiệp cân nhắc khi không lọc GPA](images/charts/17-nace-factors.svg)
+![Điều doanh nghiệp cân nhắc khi không lọc GPA](images/charts/vi/17-nace-factors.svg)
 
 <!-- SPEAKER NOTES — Slide 17 (~4 phút)
 - Năm 4 không phải học thêm. Nó là chuyển những gì bạn biết thành thứ người lạ kiểm chứng được.
@@ -413,7 +413,7 @@ Tên bạn · Tech Talk · 2026
 
 **Mười hai tuần lặp lại nhàm chán thắng mười hai tháng lập kế hoạch.**
 
-![Lộ trình chuẩn bị 12 tuần](images/charts/20-sprint-plan.svg)
+![Lộ trình chuẩn bị 12 tuần](images/charts/vi/20-sprint-plan.svg)
 
 <!-- SPEAKER NOTES — Slide 20 (~3 phút)
 - Biến buổi nói chuyện thành một lịch bắt đầu từ thứ Hai. Đây là slide người ta sẽ chụp lại.

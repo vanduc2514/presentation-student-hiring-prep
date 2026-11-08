@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 620" width="520" height="620">
+<line x1="28.0" y1="470.0" x2="492.0" y2="470.0" stroke="#28394f" stroke-width="1.5"/>
+<rect x="59.3" y="153.2" width="92.0" height="316.8" rx="6" fill="#33465e"/>
+<text x="105.3" y="139.2" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#e9eef7" text-anchor="middle">69,3%</text>
+<text x="105.3" y="496.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#8ea2ba" text-anchor="middle">Senior</text>
+<rect x="214.0" y="350.2" width="92.0" height="119.8" rx="6" fill="#33465e"/>
+<text x="260.0" y="336.2" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#e9eef7" text-anchor="middle">26,2%</text>
+<text x="260.0" y="496.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#8ea2ba" text-anchor="middle">Mid-level</text>
+<rect x="368.7" y="449.4" width="92.0" height="20.6" rx="6" fill="#f5a524"/>
+<text x="414.7" y="435.4" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#f5a524" text-anchor="middle">4,5%</text>
+<text x="414.7" y="496.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#8ea2ba" text-anchor="middle">Entry-level</text>
+<text x="28.0" y="556.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#f5a524" text-anchor="start">1 trong 22 tin tuyển dành cho người chưa có kinh nghiệm</text>
+<text x="28.0" y="598.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#5b6e88" text-anchor="start" letter-spacing="0.09em">INDEED HIRING LAB · QUÝ 1/2026 · MỸ</text>
+</svg>

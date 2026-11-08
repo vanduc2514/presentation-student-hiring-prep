@@ -1,16 +1,21 @@
 #!/usr/bin/env python3
-"""Generate the chart images used in the deck.
+"""Generate the chart images used in the deck, one set per language.
 
 Charts are hand-authored SVG so they stay minimal: no axes, no gridlines, no
 chart titles, one accent colour per chart. The background is transparent so
 each chart sits directly on the dark media card produced by build.cjs.
+
+Output:
+    slides/images/charts/en/*.svg
+    slides/images/charts/vi/*.svg
 
     python3 scripts/create-charts.py
 """
 
 from pathlib import Path
 
-OUT = Path(__file__).resolve().parent.parent / "slides" / "images" / "charts"
+ROOT = Path(__file__).resolve().parent.parent
+OUT = ROOT / "slides" / "images" / "charts"
 
 W, H = 520, 620
 PAD = 28
@@ -31,17 +36,135 @@ GREEN = "#34d399"
 
 FONT = "Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif"
 
+STRINGS = {
+    "en": {
+        "decimal": ".",
+        "senior": "Senior",
+        "mid": "Mid-level",
+        "entry": "Entry-level",
+        "posting_callout": "1 in 22 postings is open to someone without experience",
+        "src_postings": "INDEED HIRING LAB · Q1 2026 · US",
+        "age_young": "Aged 22–25",
+        "age_senior": "Aged 35–49",
+        "same_occupations": "Same occupations.",
+        "opposite_outcomes": "Opposite outcomes.",
+        "src_cohort": "STANFORD DIGITAL ECONOMY LAB · ADP PAYROLL DATA",
+        "embedded": "Embedded",
+        "mobile": "Mobile",
+        "backend": "Back-end",
+        "fullstack": "Full-stack",
+        "per_month": "Million VND per month",
+        "src_salary": "TALENTHERO · EMPLOYSOME · 2026",
+        "applications": "applications",
+        "reach_interview": "reach an interview",
+        "gets_offer": "gets the offer",
+        "funnel_caption": "4.2% reach an interview · 0.34% reach an offer",
+        "src_funnel": "ASHBY 2026 · 109M APPLICATIONS",
+        "ai_suspect": "Recruiters suspect deception",
+        "ai_candidates": "Candidates seen using AI",
+        "ai_inperson": "Roles with an in-person round",
+        "ai_allow": "Employers allowing AI in tests",
+        "detection_bad": "Detection is unreliable.",
+        "detection_good": "The follow-up question is not.",
+        "src_ai": "GREENHOUSE 2026 · GARTNER · ROBERT HALF",
+        "detector_l1": "of human-written English from non-native",
+        "detector_l2": "speakers is flagged as machine-generated",
+        "detector_wrong": "wrongly flagged",
+        "detector_right": "handled correctly",
+        "detector_tool": "The tool is guessing.",
+        "detector_you": "Your explanation is not.",
+        "src_detector": "STANFORD · SEVEN LEADING AI-TEXT DETECTORS",
+        "convert": "convert to full-time",
+        "intern_l1": "The internship is the highest-leverage",
+        "intern_l2": "move available to a student.",
+        "src_intern": "NACE 2026 INTERNSHIP & CO-OP REPORT",
+        "major": "Academic major",
+        "experience": "Industry experience",
+        "internship": "Industry internship",
+        "internship_here": "Internship here",
+        "still_gpa": "still screen GPA",
+        "gpa_drop": "down from 73% in 2019",
+        "src_nace": "NACE 2026 · EMPLOYERS WHO SKIP GPA",
+        "build": "Build",
+        "package": "Package",
+        "apply": "Apply",
+        "build_detail": "fundamentals + one project",
+        "package_detail": "CV per role + GitHub profile",
+        "apply_detail": "10 applications a week + 2 mocks",
+        "week": "week {}",
+        "start": "start",
+        "src_sprint": "A PLAN SMALL ENOUGH TO ACTUALLY START",
+    },
+    "vi": {
+        "decimal": ",",
+        "senior": "Senior",
+        "mid": "Mid-level",
+        "entry": "Entry-level",
+        "posting_callout": "1 trong 22 tin tuyển dành cho người chưa có kinh nghiệm",
+        "src_postings": "INDEED HIRING LAB · QUÝ 1/2026 · MỸ",
+        "age_young": "22–25 tuổi",
+        "age_senior": "35–49 tuổi",
+        "same_occupations": "Cùng một nghề.",
+        "opposite_outcomes": "Kết quả trái ngược.",
+        "src_cohort": "STANFORD DIGITAL ECONOMY LAB · DỮ LIỆU BẢNG LƯƠNG ADP",
+        "embedded": "Nhúng",
+        "mobile": "Mobile",
+        "backend": "Back-end",
+        "fullstack": "Full-stack",
+        "per_month": "Triệu VND mỗi tháng",
+        "src_salary": "TALENTHERO · EMPLOYSOME · 2026",
+        "applications": "hồ sơ",
+        "reach_interview": "được gọi phỏng vấn",
+        "gets_offer": "được nhận",
+        "funnel_caption": "4,2% được gọi phỏng vấn · 0,34% được nhận",
+        "src_funnel": "ASHBY 2026 · 109 TRIỆU HỒ SƠ",
+        "ai_suspect": "Recruiter nghi ngờ gian dối",
+        "ai_candidates": "Ứng viên dùng AI",
+        "ai_inperson": "Vị trí có vòng trực tiếp",
+        "ai_allow": "Cho phép AI khi thi kỹ thuật",
+        "detection_bad": "Phát hiện không đáng tin.",
+        "detection_good": "Câu hỏi đào sâu thì có.",
+        "src_ai": "GREENHOUSE 2026 · GARTNER · ROBERT HALF",
+        "detector_l1": "văn bản tiếng Anh của người không bản ngữ",
+        "detector_l2": "bị gắn nhãn là do máy tạo ra",
+        "detector_wrong": "gắn nhãn sai",
+        "detector_right": "xử lý đúng",
+        "detector_tool": "Công cụ đang đoán.",
+        "detector_you": "Lời giải thích của bạn thì không.",
+        "src_detector": "STANFORD · BẢY CÔNG CỤ PHÁT HIỆN HÀNG ĐẦU",
+        "convert": "được chuyển chính thức",
+        "intern_l1": "Thực tập là nước đi đòn bẩy",
+        "intern_l2": "cao nhất với sinh viên.",
+        "src_intern": "NACE 2026 · BÁO CÁO THỰC TẬP",
+        "major": "Ngành học",
+        "experience": "Kinh nghiệm trong ngành",
+        "internship": "Thực tập trong ngành",
+        "internship_here": "Thực tập tại đây",
+        "still_gpa": "vẫn lọc theo GPA",
+        "gpa_drop": "giảm từ 73% năm 2019",
+        "src_nace": "NACE 2026 · DOANH NGHIỆP KHÔNG LỌC GPA",
+        "build": "Xây",
+        "package": "Đóng gói",
+        "apply": "Nộp",
+        "build_detail": "nền tảng + một dự án",
+        "package_detail": "CV theo vị trí + hồ sơ GitHub",
+        "apply_detail": "10 hồ sơ mỗi tuần + 2 buổi thử",
+        "week": "tuần {}",
+        "start": "bắt đầu",
+        "src_sprint": "KẾ HOẠCH ĐỦ NHỎ ĐỂ THỰC SỰ BẮT ĐẦU",
+    },
+}
 
-def esc(text):
-    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+def esc(value):
+    return value.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def text(x, y, value, size=12, fill=INK, weight=400, anchor="start", spacing=None, opacity=None):
+def text(x, y, value, size=12, fill=INK, weight=400, anchor="start", spacing=None):
     extra = f' letter-spacing="{spacing}"' if spacing else ""
-    op = f' opacity="{opacity}"' if opacity else ""
     return (
         f'<text x="{x:.1f}" y="{y:.1f}" font-family="{FONT}" font-size="{size}" '
-        f'font-weight="{weight}" fill="{fill}" text-anchor="{anchor}"{extra}{op}>'
+        f'font-weight="{weight}" fill="{fill}" text-anchor="{anchor}"{extra}>'
         f"{esc(value)}</text>"
     )
 
@@ -63,6 +186,15 @@ def line(x1, y1, x2, y2, stroke=TRACK, width=1):
     )
 
 
+def make_num(t):
+    sep = t["decimal"]
+
+    def num(value, decimals=1):
+        return f"{value:.{decimals}f}".replace(".", sep)
+
+    return num
+
+
 def doc(body, source):
     parts = [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -75,15 +207,15 @@ def doc(body, source):
     return "\n".join(parts)
 
 
-def save(name, body, source=""):
-    OUT.mkdir(parents=True, exist_ok=True)
-    path = OUT / f"{name}.svg"
+def save(lang, name, body, source=""):
+    folder = OUT / lang
+    folder.mkdir(parents=True, exist_ok=True)
+    path = folder / f"{name}.svg"
     path.write_text(doc(body, source), encoding="utf-8")
-    print(f"wrote {path.name}")
+    print(f"wrote {path.relative_to(ROOT)}")
 
 
 def bar_list(rows, max_value, top=196, gap=100):
-    """Label and value on one line, a single rounded track underneath."""
     body = []
     for i, (label, value, color, display) in enumerate(rows):
         y = top + i * gap
@@ -97,16 +229,14 @@ def bar_list(rows, max_value, top=196, gap=100):
 # ── Slide 5: share of postings ────────────────────────────────────────────────
 
 
-def chart_posting_mix():
-    base = 470
-    top = 150
+def chart_posting_mix(lang, t, num):
+    base, top = 470, 150
     slot = INNER / 3
     bar_w = 92
-
     rows = [
-        ("Senior", 69.3, FAINT, "69.3%"),
-        ("Mid-level", 26.2, FAINT, "26.2%"),
-        ("Entry-level", 4.5, AMBER, "4.5%"),
+        (t["senior"], 69.3, FAINT, num(69.3) + "%"),
+        (t["mid"], 26.2, FAINT, num(26.2) + "%"),
+        (t["entry"], 4.5, AMBER, num(4.5) + "%"),
     ]
     scale = (base - top) / 70.0
 
@@ -128,61 +258,59 @@ def chart_posting_mix():
         )
         body.append(text(x + bar_w / 2, base + 26, label, 12, MUTED, 400, anchor="middle"))
 
-    body.append(
-        text(PAD, 560, "1 in 22 postings is open to someone without experience", 11.5, AMBER, 600)
-    )
-    save("05-posting-mix", body, "INDEED HIRING LAB · Q1 2026 · US")
+    body.append(text(PAD, 556, t["posting_callout"], 11.5, AMBER, 600))
+    save(lang, "05-posting-mix", body, t["src_postings"])
 
 
 # ── Slide 6: two cohorts, opposite directions ─────────────────────────────────
 
 
-def chart_cohort_split():
+def chart_cohort_split(lang, t, num):
     cx = W / 2
-    scale = 205 / 24.0
+    scale = 160 / 24.0
 
     body = [line(cx, 196, cx, 452, TRACK, 1.5)]
 
-    body.append(text(cx, 150, "Aged 22–25", 12.5, MUTED, 400, anchor="middle"))
-    body.append(text(PAD, 210, "−19%", 27, ROSE, 700))
+    body.append(text(cx, 150, t["age_young"], 12.5, MUTED, 400, anchor="middle"))
     body.append(rect(cx - 19 * scale, 230, 19 * scale, 44, 8, ROSE))
+    body.append(text(cx - 19 * scale - 12, 252, "−" + num(19, 0) + "%", 27, ROSE, 700, anchor="end"))
 
-    body.append(text(cx, 348, "Aged 35–49", 12.5, MUTED, 400, anchor="middle"))
+    body.append(text(cx, 348, t["age_senior"], 12.5, MUTED, 400, anchor="middle"))
     body.append(rect(cx, 366, 7.5 * scale, 44, 8, GREEN))
-    body.append(text(cx + 7.5 * scale + 14, 398, "+7.5%", 27, GREEN, 700))
+    body.append(text(cx + 7.5 * scale + 12, 388, "+" + num(7.5) + "%", 27, GREEN, 700))
 
-    body.append(text(PAD, 486, "Same occupations.", 15, INK, 700))
-    body.append(text(PAD, 510, "Opposite outcomes.", 15, ROSE, 700))
-    save("06-cohort-split", body, "STANFORD DIGITAL ECONOMY LAB · ADP PAYROLL DATA")
+    body.append(text(PAD, 486, t["same_occupations"], 15, INK, 700))
+    body.append(text(PAD, 510, t["opposite_outcomes"], 15, ROSE, 700))
+    save(lang, "06-cohort-split", body, t["src_cohort"])
 
 
 # ── Slide 8: fresher salary by track ─────────────────────────────────────────
 
 
-def chart_vietnam():
+def chart_vietnam(lang, t, num):
     rows = [
-        ("Embedded", 21.4, AMBER, "21.4"),
-        ("Mobile", 14.2, AMBER, "14.2"),
-        ("Back-end", 12.4, AMBER, "12.4"),
-        ("Full-stack", 10.1, AMBER, "10.1"),
+        (t["embedded"], 21.4, AMBER, num(21.4)),
+        (t["mobile"], 14.2, AMBER, num(14.2)),
+        (t["backend"], 12.4, AMBER, num(12.4)),
+        (t["fullstack"], 10.1, AMBER, num(10.1)),
     ]
     body, bottom = bar_list(rows, 24.0, top=176, gap=90)
     body.append(line(PAD, bottom + 2, W - PAD, bottom + 2, TRACK, 1))
     for tick in (0, 10, 20):
         x = PAD + INNER * (tick / 24.0)
         body.append(text(x, bottom + 26, str(tick), 10, SOURCE, 400, anchor="middle"))
-    body.append(text(PAD, bottom + 54, "Million VND per month", 11, MUTED))
-    save("08-vietnam-market", body, "TALENTHERO · EMPLOYSOME · 2026")
+    body.append(text(PAD, bottom + 54, t["per_month"], 11, MUTED))
+    save(lang, "08-vietnam-market", body, t["src_salary"])
 
 
 # ── Slide 9: the funnel ───────────────────────────────────────────────────────
 
 
-def chart_funnel():
+def chart_funnel(lang, t, num):
     stages = [
-        ("291", "applications", 1.0, AMBER),
-        ("12", "reach an interview", 0.62, VIOLET),
-        ("1", "gets the offer", 0.30, TEAL),
+        ("291", t["applications"], 1.0, AMBER),
+        ("12", t["reach_interview"], 0.62, VIOLET),
+        ("1", t["gets_offer"], 0.30, TEAL),
     ]
     body = []
     for i, (big, label, ratio, color) in enumerate(stages):
@@ -192,50 +320,49 @@ def chart_funnel():
         body.append(rect(x, y, w, 64, 14, color, 0.92))
         body.append(text(W / 2, y + 31, big, 26, "#0f172a", 700, anchor="middle"))
         body.append(text(W / 2, y + 51, label, 10.5, "#0f172a", 500, anchor="middle"))
-    body.append(text(PAD, 556, "4.2% reach an interview · 0.34% reach an offer", 11.5, MUTED))
-    save("09-funnel", body, "ASHBY 2026 · 109M APPLICATIONS")
+    body.append(text(PAD, 556, t["funnel_caption"], 11.5, MUTED))
+    save(lang, "09-funnel", body, t["src_funnel"])
 
 
 # ── Slide 14: AI in the interview loop ───────────────────────────────────────
 
 
-def chart_ai_interview():
+def chart_ai_interview(lang, t, num):
     rows = [
-        ("Recruiters suspect deception", 91, ROSE, "91%"),
-        ("Candidates seen using AI", 35, ROSE, "35%"),
-        ("Roles with an in-person round", 30, BLUE, "30%"),
-        ("Employers allowing AI in tests", 25, TEAL, "25%"),
+        (t["ai_suspect"], 91, ROSE, num(91, 0) + "%"),
+        (t["ai_candidates"], 35, ROSE, num(35, 0) + "%"),
+        (t["ai_inperson"], 30, BLUE, num(30, 0) + "%"),
+        (t["ai_allow"], 25, TEAL, num(25, 0) + "%"),
     ]
     body, bottom = bar_list(rows, 100, top=182, gap=88)
-    body.append(text(PAD, bottom + 30, "Detection is unreliable.", 14, INK, 700))
-    body.append(text(PAD, bottom + 54, "The follow-up question is not.", 14, TEAL, 700))
-    save("14-ai-interview", body, "GREENHOUSE 2026 · GARTNER · ROBERT HALF")
+    body.append(text(PAD, bottom + 30, t["detection_bad"], 14, INK, 700))
+    body.append(text(PAD, bottom + 54, t["detection_good"], 14, TEAL, 700))
+    save(lang, "14-ai-interview", body, t["src_ai"])
 
 
 # ── Slide 15: false positives ────────────────────────────────────────────────
 
 
-def chart_detector():
-    body = []
-    body.append(text(PAD, 214, "61%", 64, ROSE, 700, spacing="-0.03em"))
-    body.append(text(PAD, 250, "of human-written English from non-native", 12.5, INK))
-    body.append(text(PAD, 270, "speakers is flagged as machine-generated", 12.5, INK))
-
+def chart_detector(lang, t, num):
+    body = [
+        text(PAD, 214, "61%", 64, ROSE, 700, spacing="-0.03em"),
+        text(PAD, 250, t["detector_l1"], 12.5, INK),
+        text(PAD, 270, t["detector_l2"], 12.5, INK),
+    ]
     y = 330
     body.append(rect(PAD, y, INNER, 22, 11, TRACK))
     body.append(rect(PAD, y, INNER * 0.61, 22, 11, ROSE))
-    body.append(text(PAD, y + 52, "wrongly flagged", 10.5, ROSE, 500))
-    body.append(text(W - PAD, y + 52, "handled correctly", 10.5, TEAL, 500, anchor="end"))
-
-    body.append(text(PAD, 456, "The tool is guessing.", 13, INK, 600))
-    body.append(text(PAD, 478, "Your explanation is not.", 13, TEAL, 600))
-    save("15-detector-bias", body, "STANFORD · SEVEN LEADING AI-TEXT DETECTORS")
+    body.append(text(PAD, y + 52, t["detector_wrong"], 10.5, ROSE, 500))
+    body.append(text(W - PAD, y + 52, t["detector_right"], 10.5, TEAL, 500, anchor="end"))
+    body.append(text(PAD, 456, t["detector_tool"], 13, INK, 600))
+    body.append(text(PAD, 478, t["detector_you"], 13, TEAL, 600))
+    save(lang, "15-detector-bias", body, t["src_detector"])
 
 
 # ── Slide 16: internship conversion ──────────────────────────────────────────
 
 
-def chart_conversion():
+def chart_conversion(lang, t, num):
     cx, cy, r = W / 2, 292, 104
     stroke = 20
     circumference = 2 * 3.14159265 * r
@@ -249,40 +376,40 @@ def chart_conversion():
             f'stroke-dasharray="{dash:.1f} {circumference:.1f}" '
             f'transform="rotate(-90 {cx:.1f} {cy})"/>'
         ),
-        text(cx, cy - 2, "63.1%", 44, INK, 700, anchor="middle", spacing="-0.02em"),
-        text(cx, cy + 30, "convert to full-time", 11.5, MUTED, 400, anchor="middle"),
-        text(PAD, 498, "The internship is the highest-leverage", 12.5, INK),
-        text(PAD, 520, "move available to a student.", 12.5, INK),
+        text(cx, cy - 2, num(63.1) + "%", 44, INK, 700, anchor="middle", spacing="-0.02em"),
+        text(cx, cy + 30, t["convert"], 11.5, MUTED, 400, anchor="middle"),
+        text(PAD, 498, t["intern_l1"], 12.5, INK),
+        text(PAD, 520, t["intern_l2"], 12.5, INK),
     ]
-    save("16-intern-conversion", body, "NACE 2026 INTERNSHIP & CO-OP REPORT")
+    save(lang, "16-intern-conversion", body, t["src_intern"])
 
 
 # ── Slide 17: what fills the gap when GPA drops ──────────────────────────────
 
 
-def chart_nace_factors():
+def chart_nace_factors(lang, t, num):
     rows = [
-        ("Academic major", 94, VIOLET, "94%"),
-        ("Industry experience", 81, VIOLET, "81%"),
-        ("Industry internship", 79, VIOLET, "79%"),
-        ("Internship here", 74, VIOLET, "74%"),
+        (t["major"], 94, VIOLET, num(94, 0) + "%"),
+        (t["experience"], 81, VIOLET, num(81, 0) + "%"),
+        (t["internship"], 79, VIOLET, num(79, 0) + "%"),
+        (t["internship_here"], 74, VIOLET, num(74, 0) + "%"),
     ]
     body, bottom = bar_list(rows, 100, top=176, gap=84)
     body.append(line(PAD, bottom + 8, W - PAD, bottom + 8, TRACK, 1))
-    body.append(text(PAD, bottom + 54, "42%", 31, AMBER, 700))
-    body.append(text(PAD + 92, bottom + 50, "still screen GPA", 11.5, MUTED))
-    body.append(text(PAD + 92, bottom + 68, "down from 73% in 2019", 11.5, MUTED))
-    save("17-nace-factors", body, "NACE 2026 · EMPLOYERS WHO SKIP GPA")
+    body.append(text(PAD, bottom + 54, num(42, 0) + "%", 31, AMBER, 700))
+    body.append(text(PAD + 92, bottom + 50, t["still_gpa"], 11.5, MUTED))
+    body.append(text(PAD + 92, bottom + 68, t["gpa_drop"], 11.5, MUTED))
+    save(lang, "17-nace-factors", body, t["src_nace"])
 
 
 # ── Slide 20: the 12-week plan ───────────────────────────────────────────────
 
 
-def chart_sprint():
+def chart_sprint(lang, t, num):
     phases = [
-        ("Build", "W1–4", 0.0, AMBER, "fundamentals + one project"),
-        ("Package", "W5–8", 4 / 12, VIOLET, "CV per role + GitHub profile"),
-        ("Apply", "W9–12", 8 / 12, TEAL, "10 applications a week + 2 mocks"),
+        (t["build"], t["week"].format("1–4"), 0.0, AMBER, t["build_detail"]),
+        (t["package"], t["week"].format("5–8"), 4 / 12, VIOLET, t["package_detail"]),
+        (t["apply"], t["week"].format("9–12"), 8 / 12, TEAL, t["apply_detail"]),
     ]
     body = []
     rows = [176, 306, 436]
@@ -299,18 +426,26 @@ def chart_sprint():
     for w in (0, 4, 8, 12):
         x = PAD + INNER * (w / 12)
         anchor = "start" if w == 0 else ("end" if w == 12 else "middle")
-        body.append(text(x, 536, f"week {w}" if w else "start", 9.5, SOURCE, 400, anchor=anchor))
+        label = t["start"] if w == 0 else t["week"].format(w)
+        body.append(text(x, 536, label, 9.5, SOURCE, 400, anchor=anchor))
 
-    save("20-sprint-plan", body, "A PLAN SMALL ENOUGH TO ACTUALLY START")
+    save(lang, "20-sprint-plan", body, t["src_sprint"])
+
+
+BUILDERS = [
+    chart_posting_mix,
+    chart_cohort_split,
+    chart_vietnam,
+    chart_funnel,
+    chart_ai_interview,
+    chart_detector,
+    chart_conversion,
+    chart_nace_factors,
+    chart_sprint,
+]
 
 
 if __name__ == "__main__":
-    chart_posting_mix()
-    chart_cohort_split()
-    chart_vietnam()
-    chart_funnel()
-    chart_ai_interview()
-    chart_detector()
-    chart_conversion()
-    chart_nace_factors()
-    chart_sprint()
+    for lang, strings in STRINGS.items():
+        for builder in BUILDERS:
+            builder(lang, strings, make_num(strings))

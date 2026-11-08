@@ -85,7 +85,7 @@ Your Name · Tech Talk · 2026
 - Senior roles are **69.3%** of the market
 - Entry-level fell **6.3%** while senior rose **13.5%**
 
-![Share of software postings by seniority](images/charts/05-posting-mix.svg)
+![Share of software postings by seniority](images/charts/en/05-posting-mix.svg)
 
 <!-- SPEAKER NOTES — Slide 5 (~3 min)
 - Source: Indeed Hiring Lab, Q1 2026. Senior roles are 69.3% of software postings; entry-level is 4.5%.
@@ -106,7 +106,7 @@ Your Name · Tech Talk · 2026
 
 **The work moved up. It did not move away.**
 
-![Employment change for young versus experienced workers](images/charts/06-cohort-split.svg)
+![Employment change for young versus experienced workers](images/charts/en/06-cohort-split.svg)
 
 <!-- SPEAKER NOTES — Slide 6 (~3 min)
 - This is the reframe of the whole talk. If they take one slide home, take this one.
@@ -150,7 +150,7 @@ Your Name · Tech Talk · 2026
 
 **The bar is higher. The door is not closed.**
 
-![Vietnam hiring growth and fresher salary by track](images/charts/08-vietnam-market.svg)
+![Vietnam hiring growth and fresher salary by track](images/charts/en/08-vietnam-market.svg)
 
 <!-- SPEAKER NOTES — Slide 8 (~2 min)
 - Essential balance after the US data. ITviec's Vietnam IT Salary & Recruitment Market Report 2025-2026 surveyed 1,839 people across professionals, freelancers, students, HR leaders and executives.
@@ -173,7 +173,7 @@ Your Name · Tech Talk · 2026
 
 **You are not being judged. You are being sorted.**
 
-![Applications shrinking to interviews and offers](images/charts/09-funnel.svg)
+![Applications shrinking to interviews and offers](images/charts/en/09-funnel.svg)
 
 <!-- SPEAKER NOTES — Slide 9 (~3 min)
 - Walk the funnel from the company's side, because that is the view they have never seen.
@@ -289,7 +289,7 @@ Your Name · Tech Talk · 2026
 - In-person rounds: **5%** of roles → **30%**
 - **>25%** of employers now allow AI in technical tests
 
-![How AI shows up in the interview loop](images/charts/14-ai-interview.svg)
+![How AI shows up in the interview loop](images/charts/en/14-ai-interview.svg)
 
 <!-- SPEAKER NOTES — Slide 14 (~4 min)
 - Correct a widespread misunderstanding: companies are not trying to ban AI. They are trying to find out whether you can work without it when it fails.
@@ -311,7 +311,7 @@ Your Name · Tech Talk · 2026
 
 **Do not hide your AI use. Make every line explainable.**
 
-![False positive rate of AI-text detectors on non-native English](images/charts/15-detector-bias.svg)
+![False positive rate of AI-text detectors on non-native English](images/charts/en/15-detector-bias.svg)
 
 <!-- SPEAKER NOTES — Slide 15 (~3 min)
 - This is the slide that matters most for this room, and it is the one they will not hear anywhere else.
@@ -332,7 +332,7 @@ Your Name · Tech Talk · 2026
 - Read code you did not write
 - Apply for your first internship now
 
-![Intern to full-time conversion rate](images/charts/16-intern-conversion.svg)
+![Intern to full-time conversion rate](images/charts/en/16-intern-conversion.svg)
 
 <!-- SPEAKER NOTES — Slide 16 (~4 min)
 - Shift tone here. The first half was diagnosis; the second half is prescription. Be concrete and dated.
@@ -353,7 +353,7 @@ Your Name · Tech Talk · 2026
 - One CV per role, not one CV for everything
 - Make the internship line the strongest on the page
 
-![What employers weigh when GPA is not screened](images/charts/17-nace-factors.svg)
+![What employers weigh when GPA is not screened](images/charts/en/17-nace-factors.svg)
 
 <!-- SPEAKER NOTES — Slide 17 (~4 min)
 - Year 4 is not about learning more. It is about converting what you know into things a stranger can verify.
@@ -413,7 +413,7 @@ Your Name · Tech Talk · 2026
 
 **Twelve weeks of boring repetition beats twelve months of planning.**
 
-![The 12-week preparation plan](images/charts/20-sprint-plan.svg)
+![The 12-week preparation plan](images/charts/en/20-sprint-plan.svg)
 
 <!-- SPEAKER NOTES — Slide 20 (~3 min)
 - Convert the talk into a calendar they can start on Monday. This is the slide people photograph.

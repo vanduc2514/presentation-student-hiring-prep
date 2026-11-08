@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 620" width="520" height="620">
+<text x="28.0" y="214.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#f7718a" text-anchor="start" letter-spacing="-0.03em">61%</text>
+<text x="28.0" y="250.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#e9eef7" text-anchor="start">văn bản tiếng Anh của người không bản ngữ</text>
+<text x="28.0" y="270.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#e9eef7" text-anchor="start">bị gắn nhãn là do máy tạo ra</text>
+<rect x="28.0" y="330.0" width="464.0" height="22.0" rx="11" fill="#28394f"/>
+<rect x="28.0" y="330.0" width="283.0" height="22.0" rx="11" fill="#f7718a"/>
+<text x="28.0" y="382.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#f7718a" text-anchor="start">gắn nhãn sai</text>
+<text x="492.0" y="382.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#2dd4bf" text-anchor="end">xử lý đúng</text>
+<text x="28.0" y="456.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#e9eef7" text-anchor="start">Công cụ đang đoán.</text>
+<text x="28.0" y="478.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#2dd4bf" text-anchor="start">Lời giải thích của bạn thì không.</text>
+<text x="28.0" y="598.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#5b6e88" text-anchor="start" letter-spacing="0.09em">STANFORD · BẢY CÔNG CỤ PHÁT HIỆN HÀNG ĐẦU</text>
+</svg>

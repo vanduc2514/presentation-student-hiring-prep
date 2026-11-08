@@ -33,13 +33,20 @@ Cần Node.js 20. Nếu dùng [mise](https://mise.jdx.dev/), chạy `mise instal
 
 ### Tạo lại biểu đồ
 
-Chín slide dùng biểu đồ ở card bên phải. Đây là SVG viết tay, không phải ảnh chụp, nên sắc nét ở mọi kích thước máy chiếu:
+Chín slide dùng biểu đồ ở card bên phải. Mỗi ngôn ngữ có bộ biểu đồ riêng để nhãn và dấu thập phân khớp với nội dung slide:
+
+| Đường dẫn | Ngôn ngữ |
+|---|---|
+| `slides/images/charts/en/` | Nhãn tiếng Anh, `69.3%` |
+| `slides/images/charts/vi/` | Nhãn tiếng Việt, `69,3%` |
+
+Đây là SVG viết tay, không phải ảnh chụp, nên sắc nét ở mọi kích thước máy chiếu:
 
 ```sh
 python3 scripts/create-charts.py
 ```
 
-Đây là tài sản sinh tự động duy nhất được commit vào repo. Sửa ở file nguồn, đừng sửa trực tiếp các file `.svg`.
+Script tạo cả hai bộ. Sửa ở file nguồn và bảng `STRINGS` trong đó, đừng sửa trực tiếp các file `.svg`.
 
 | Tệp kết quả | Ngôn ngữ |
 |---|---|
