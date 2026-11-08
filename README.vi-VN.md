@@ -1,76 +1,82 @@
-# Presentation Template (Mẫu Trình Chiếu)
+# Chuẩn bị cho sinh viên IT thời AI
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
 
-Một mẫu để xây dựng **bài trình chiếu impress.js** từ Markdown — viết slide trong `.md`, nhận file HTML độc lập và triển khai lên GitHub Pages tự động.
+Talkshow 90 phút về những gì nhà tuyển dụng Fresher/Intern thực sự đánh giá — và cách chuẩn bị từ năm 3 đến khi có công việc IT đầu tiên.
 
-Được phát triển dựa trên [markpress](https://github.com/davidecaminati/markpress).
+Xây dựng bằng [markpress](https://github.com/davidecaminati/markpress) và impress.js.
 
-## Sử dụng Mẫu Này
+## Bối cảnh
 
-1. Nhấn **Use this template** → **Create a new repository**
-2. Clone repository mới
-3. Cài đặt dependencies
-4. Bắt đầu viết slide
+Thị trường IT ngày càng cạnh tranh, doanh nghiệp tuyển Fresher/Intern khắt khe hơn. Biết code và có CV tốt không còn đủ để được gọi phỏng vấn.
+
+Buổi nói chuyện đứng về phía nhà tuyển dụng: hội đồng thực sự điền gì vào phiếu đánh giá, ứng viên bị loại ở đâu, AI đã thay đổi vòng phỏng vấn thế nào, và sinh viên có thể làm gì trong 12 tuần tới.
+
+**Khán giả:** sinh viên IT năm 3–4 và người mới tốt nghiệp đang nộp hồ sơ.
+
+**Bốn nội dung:**
+
+1. Bức tranh tuyển dụng Fresher/Intern trong thời đại AI
+2. Quy trình tuyển dụng và tiêu chí đánh giá ứng viên
+3. Lộ trình chuẩn bị cho sinh viên năm 3, năm 4 và người mới tốt nghiệp
+4. Hỏi đáp trực tiếp
+
+## Build
 
 ```sh
 npm install
-npm run build      # → output/index.html
-npm run preview    # mở trong trình duyệt
+npm run build      # → output/index.html và output/index.vi.html
+npm run preview    # mở bản tiếng Anh
 ```
 
-Yêu cầu Node.js 20. Nếu bạn dùng [mise](https://mise.jdx.dev/), chạy `mise install` trước.
+Cần Node.js 20. Nếu dùng [mise](https://mise.jdx.dev/), chạy `mise install` trước.
 
-## Cấu trúc Dự án
+| Tệp kết quả | Ngôn ngữ |
+|---|---|
+| `output/index.html` | Tiếng Anh |
+| `output/index.vi.html` | Tiếng Việt |
+| `output/remote.html` | Remote trên điện thoại kèm speaker notes |
 
-```
-slides/
-  presentation.en.md  # nguồn slide tiếng Anh
-  presentation.vi.md  # nguồn slide tiếng Việt
-  images/             # hình ảnh được tham chiếu trong slide
-build.cjs             # script build — tùy chỉnh theme tại đây
-package.json
-mise.toml             # định phiên bản Node.js
-.github/
-  workflows/
-    deploy-pages.yml  # tự động triển khai lên GitHub Pages khi push lên main
-.agents/
-  skills/             # kỹ năng AI agent cho viết và tạo kiểu slide
-research/             # ghi chú brainstorm và nghiên cứu
-scripts/              # script tiện ích (ví dụ: generate-pdf.cjs)
-```
+## Cấu trúc
 
-## Tùy chỉnh
+| Đường dẫn | Mục đích |
+|---|---|
+| `slides/presentation.en.md` | Nội dung slide tiếng Anh |
+| `slides/presentation.vi.md` | Nội dung slide tiếng Việt |
+| `slides/images/` | Mã QR và icon |
+| `research/findings.md` | Nguồn dữ liệu cho từng con số trên slide |
+| `research/idea.md` | Ý tưởng, luận điểm và cấu trúc buổi nói chuyện |
+| `build.cjs` | Script build và theming |
+| `.agents/skills/` | Skill hướng dẫn viết và tạo style slide |
 
-### Thay đổi tiêu đề trình chiếu
+## Dàn ý
 
-Chỉnh sửa block `<!--markpress-opt-->` ở đầu `slides/presentation.en.md` (và block tương ứng trong `slides/presentation.vi.md`):
+| # | Slide | Phần |
+|---|---|---|
+| 1–3 | Tiêu đề, câu hỏi mở, nội dung | Mở đầu |
+| 4 | Ba điều các bạn từng được nghe | Mở đầu |
+| 5–8 | Tỷ lệ entry-level, bậc thang ngắn lại, tiêu chuẩn mới, Việt Nam | Bức tranh |
+| 9–10 | Phễu tuyển dụng, CV là bài toán xếp hạng | Quy trình |
+| 11–13 | Tám ô đánh giá, tiêu chí loại trực tiếp, lý do bị loại | Tiêu chí |
+| 14–15 | Cách AI được kiểm tra, công cụ phát hiện không đáng tin | Tiêu chí |
+| 16–18 | Năm 3, năm 4, mới tốt nghiệp | Lộ trình |
+| 19–20 | Bộ bằng chứng, 12 tuần tới | Lộ trình |
+| 21 | Hỏi đáp | Kết thúc |
 
-```markdown
-<!--markpress-opt
-{
-  "autoSplit": false,
-  "sanitize": false,
-  "title": "Tiêu đề Trình chiếu của Bạn"
-}
-markpress-opt-->
-```
+## Speaker notes
 
-### Màu sắc, phông chữ và bố cục
+Speaker notes nằm trong HTML comment dưới mỗi slide. Các câu chuyện cá nhân được đánh dấu `[STORY: ...]` và cần thay bằng trường hợp thật trước khi trình bày.
 
-Tất cả chủ đề (bảng màu, phông chữ, vị trí slide, biến CSS) được thực hiện trong `build.cjs`.
+## Nguồn
 
-Xem [`.agents/skills/markpress-styling/SKILL.md`](.agents/skills/markpress-styling/SKILL.md) để tham khảo đầy đủ.
+Mọi con số trên slide đều truy được về `research/findings.md`, tệp này cũng liệt kê những thống kê phổ biến bị loại bỏ vì không có nguồn gốc kiểm chứng được.
 
-## GitHub Pages
+## Triển khai
 
-Workflow đi kèm (`deploy-pages.yml`) sẽ build và triển khai mỗi khi push lên `main`.
+Workflow `deploy-pages.yml` build và deploy mỗi lần push lên `main`.
 
-Bật GitHub Pages trong repository của bạn:
-- **Settings** → **Pages** → **Source**: `GitHub Actions`
+Bật GitHub Pages: **Settings** → **Pages** → **Source**: `GitHub Actions`.
 
-## Viết Slide
+## Viết slide
 
-Slide được viết trong `slides/presentation.en.md` (tiếng Anh) và `slides/presentation.vi.md` (tiếng Việt), phân cách bằng `------` (sáu dấu gạch ngang).
-
-Xem [`.agents/skills/markpress-content/SKILL.md`](.agents/skills/markpress-content/SKILL.md) để được hướng dẫn đầy đủ.
+Các slide phân tách bằng `------` (sáu dấu gạch ngang). Xem [`.agents/skills/markpress-content/SKILL.md`](.agents/skills/markpress-content/SKILL.md) để biết cách viết, và [`.agents/skills/markpress-styling/SKILL.md`](.agents/skills/markpress-styling/SKILL.md) cho phần theming.

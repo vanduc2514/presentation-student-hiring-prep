@@ -1,12 +1,14 @@
-# AGENTS.md — Presentation Template
+# AGENTS.md — Presentation Project
 
 ## Project Overview
 
-<!-- TODO: Replace this section with your presentation details -->
+This project contains a **90-minute talk** (including ~25 minutes of Q&A) titled **"Student Hiring Preparation in the AI Era"**.
 
-This project contains a **[duration]-minute talk** titled **"[Your Talk Title]"**.
+The talk targets IT students in year 3–4 and recent graduates who can already code and already have a CV. It presents hiring from the employer's side: what a panel scores, where candidates are rejected, how AI changed the interview loop, and a preparation roadmap.
 
-The talk targets [your audience description].
+It has four sections: the AI-era hiring picture, the process and evaluation criteria, the roadmap for year 3 / year 4 / new graduates, and live Q&A.
+
+All statistics must trace back to `research/findings.md`, which also records which widely repeated claims were deliberately excluded. Personal Tech Lead stories are marked `[STORY: ...]` in speaker notes and are placeholders for the presenter.
 
 ## How to Build
 

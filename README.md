@@ -1,76 +1,82 @@
-# Presentation Template
+# Student Hiring Preparation in the AI Era
 
 [![vi](https://img.shields.io/badge/lang-vi-yellow.svg)](README.vi-VN.md)
 
-A template for building **impress.js presentations** from Markdown — write slides in `.md`, get a self-contained HTML slideshow, and deploy to GitHub Pages automatically.
+A 90-minute campus talkshow on what Fresher and Intern hiring actually tests — and how to prepare from year 3 to first offer.
 
-Powered by [markpress](https://github.com/davidecaminati/markpress).
+Built with [markpress](https://github.com/davidecaminati/markpress) and impress.js.
 
-## Use This Template
+## Background
 
-1. Click **Use this template** → **Create a new repository**
-2. Clone your new repository
-3. Install dependencies
-4. Start writing slides
+The IT job market is more competitive and companies are stricter when hiring Freshers and Interns. Knowing how to code and having a clean CV is no longer enough to get an interview.
+
+This talk takes the employer's side of the table: what a hiring panel actually writes down, where candidates are rejected, how AI changed the interview loop, and what a student can do in the next 12 weeks.
+
+**Audience:** IT students in year 3–4, and recent graduates already applying.
+
+**Four sections:**
+
+1. The Fresher/Intern hiring picture in the AI era
+2. The hiring process and the criteria candidates are judged on
+3. A preparation roadmap for year 3, year 4, and new graduates
+4. Live Q&A
+
+## Build
 
 ```sh
 npm install
-npm run build      # → output/index.html
-npm run preview    # open in browser
+npm run build      # → output/index.html and output/index.vi.html
+npm run preview    # open the English deck in the browser
 ```
 
 Requires Node.js 20. If you use [mise](https://mise.jdx.dev/), run `mise install` first.
 
-## Project Structure
+| Output | Language |
+|---|---|
+| `output/index.html` | English |
+| `output/index.vi.html` | Vietnamese |
+| `output/remote.html` | Phone remote with live speaker notes |
 
-```
-slides/
-  presentation.en.md  # English slide source
-  presentation.vi.md  # Vietnamese slide source
-  images/             # images referenced in slides
-build.cjs             # build script — customize theming here
-package.json
-mise.toml             # Node.js version pin
-.github/
-  workflows/
-    deploy-pages.yml  # auto-deploy to GitHub Pages on push to main
-.agents/
-  skills/             # AI agent skills for writing and styling slides
-research/             # brainstorming notes and planning materials
-scripts/              # utility scripts (e.g., generate-pdf.cjs)
-```
+## Contents
 
-## Customizing
+| Path | Purpose |
+|---|---|
+| `slides/presentation.en.md` | English slide source |
+| `slides/presentation.vi.md` | Vietnamese slide source |
+| `slides/images/` | QR codes and icons |
+| `research/findings.md` | Sourced statistics behind every claim in the deck |
+| `research/idea.md` | Talk concept, thesis, and structure |
+| `build.cjs` | Build script and theming |
+| `.agents/skills/` | Skills for writing and styling slides |
 
-### Change the presentation title
+## Outline
 
-Edit the `<!--markpress-opt-->` block at the top of `slides/presentation.en.md` (and the corresponding block in `slides/presentation.vi.md`):
+| # | Slide | Section |
+|---|---|---|
+| 1–3 | Title, the question, agenda | Hook |
+| 4 | Three things you have been told | Hook |
+| 5–8 | Entry-level share, the narrowing ladder, the new bar, Vietnam | The picture |
+| 9–10 | The funnel, CV as a ranking problem | Process |
+| 11–13 | The eight boxes, knockout criteria, red flags | Criteria |
+| 14–15 | How AI is tested, unreliable detection | Criteria |
+| 16–18 | Year 3, year 4, new grad | Roadmap |
+| 19–20 | The evidence stack, the next 12 weeks | Roadmap |
+| 21 | Q&A | Close |
 
-```markdown
-<!--markpress-opt
-{
-  "autoSplit": false,
-  "sanitize": false,
-  "title": "Your Presentation Title"
-}
-markpress-opt-->
-```
+## Speaker notes
 
-### Colors, fonts, and layout
+Notes live in HTML comments under each slide. Personal stories are marked `[STORY: ...]` and should be replaced with real cases before delivering the talk.
 
-All theming (color palette, fonts, slide positioning, CSS variables) is done in `build.cjs`.
+## Sources
 
-See [`.agents/skills/markpress-styling/SKILL.md`](.agents/skills/markpress-styling/SKILL.md) for the full reference.
+Every number on a slide is traceable to `research/findings.md`, which also lists the widely repeated statistics that were deliberately excluded because they have no verifiable primary source.
 
-## GitHub Pages
+## Deploy
 
 The included workflow (`deploy-pages.yml`) builds and deploys on every push to `main`.
 
-Enable GitHub Pages in your repository:
-- **Settings** → **Pages** → **Source**: `GitHub Actions`
+Enable GitHub Pages: **Settings** → **Pages** → **Source**: `GitHub Actions`.
 
-## Writing Slides
+## Writing slides
 
-Slides are written in `slides/presentation.en.md` (English) and `slides/presentation.vi.md` (Vietnamese), separated by `------` (six dashes).
-
-See [`.agents/skills/markpress-content/SKILL.md`](.agents/skills/markpress-content/SKILL.md) for the full guide.
+Slides are separated by `------` (six dashes). See [`.agents/skills/markpress-content/SKILL.md`](.agents/skills/markpress-content/SKILL.md) for the authoring guide, and [`.agents/skills/markpress-styling/SKILL.md`](.agents/skills/markpress-styling/SKILL.md) for theming.
