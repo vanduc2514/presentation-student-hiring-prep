@@ -80,14 +80,12 @@ Tên bạn · Tech Talk · 2026
 
 <!--slide-attr x=600 y=2400 rotate=2 scale=1.0 -->
 
-# Chỉ 4,5% tin tuyển phần mềm là entry-level
+# Một tin tuyển trong 22
 
-Thị trường Mỹ, quý 1/2026
+- Vị trí senior chiếm **69,3%** thị trường
+- Entry-level giảm **6,3%** trong khi senior tăng **13,5%**
 
-- Vị trí senior: **69,3%** tổng tin tuyển
-- Tin entry-level: **−6,3%** trong khi senior **+13,5%**
-- Lao động 22–25 tuổi trong ngành chịu ảnh hưởng AI: **thấp hơn xu hướng 19%**
-- Lao động 35–49 tuổi cùng ngành: **+6–9%**
+![Tỷ trọng tin tuyển phần mềm theo cấp bậc](images/charts/05-posting-mix.svg)
 
 <!-- SPEAKER NOTES — Slide 5 (~3 phút)
 - Nguồn: Indeed Hiring Lab, quý 1/2026. Vị trí senior chiếm 69,3% tin tuyển phần mềm; entry-level còn 4,5%.
@@ -102,13 +100,13 @@ Thị trường Mỹ, quý 1/2026
 
 # Bậc thang đầu tiên ngắn lại
 
-> "Việc của entry-level không biến mất. Nó bị gộp vào việc của người ngồi trên bạn."
-
 - AI viết **26,9%** code đã merge vào production
-- **45%** code do AI sinh ra mắc lỗi trong OWASP Top 10
-- Lập trình viên **chậm hơn 19%** khi dùng AI, nhưng lại tin mình **nhanh hơn 20%**
+- **45%** code do AI sinh ra mắc lỗi OWASP Top 10
+- Lập trình viên **chậm hơn 19%** khi dùng AI mà tưởng mình nhanh hơn
 
 **Công việc dịch lên trên. Nó không biến mất.**
+
+![Thay đổi việc làm giữa lao động trẻ và lao động có kinh nghiệm](images/charts/06-cohort-split.svg)
 
 <!-- SPEAKER NOTES — Slide 6 (~3 phút)
 - Đây là slide định khung lại toàn bộ buổi nói chuyện. Nếu chỉ mang về một slide, hãy mang slide này.
@@ -146,12 +144,13 @@ Thị trường Mỹ, quý 1/2026
 
 # Việt Nam không phải thị trường đó
 
-- **66,1%** doanh nghiệp tăng nhân sự IT trong 2025
-- **69,6%** dự định mở rộng trong 2026
-- **73%** đã ứng dụng AI — ưu tiên chuyển sang giải quyết vấn đề, thích nghi, phối hợp
-- Lương fresher: **10–14 triệu VND/tháng**
+- **66,1%** doanh nghiệp tăng nhân sự IT năm 2025
+- **69,6%** dự định mở rộng tiếp trong 2026
+- Lương fresher: **10–14 triệu VND** mỗi tháng
 
 **Tiêu chuẩn cao hơn. Cửa không đóng.**
+
+![Tăng trưởng nhân sự IT và lương fresher theo mảng](images/charts/08-vietnam-market.svg)
 
 <!-- SPEAKER NOTES — Slide 8 (~2 phút)
 - Cần cân bằng sau phần dữ liệu Mỹ. Báo cáo IT Salary & Recruitment Market 2025-2026 của ITviec khảo sát 1.839 người gồm nhân sự IT, freelancer, sinh viên, lãnh đạo HR và CxO.
@@ -167,14 +166,14 @@ Thị trường Mỹ, quý 1/2026
 
 # Phễu tuyển dụng, nói thẳng
 
-| Giai đoạn | Thực tế |
-|---|---|
-| Hồ sơ cho một vị trí được tuyển | **291** |
-| Hồ sơ được gọi phỏng vấn | **3,6–4,7%** |
-| Lần lướt CV đầu tiên | **7,4 giây** |
-| Recruiter dùng bộ lọc ATS | **99,7%** |
+- **291** hồ sơ cho mỗi vị trí được tuyển
+- **3,6–4,7%** được gọi phỏng vấn
+- **7,4 giây** cho lần lướt CV đầu tiên
+- **99,7%** recruiter lọc bằng ATS
 
 **Bạn không bị đánh giá. Bạn đang bị sắp xếp.**
+
+![Từ hồ sơ thu hẹp dần đến phỏng vấn và offer](images/charts/09-funnel.svg)
 
 <!-- SPEAKER NOTES — Slide 9 (~3 phút)
 - Đi qua phễu từ phía doanh nghiệp, vì đó là góc nhìn họ chưa từng thấy.
@@ -285,12 +284,12 @@ Thị trường Mỹ, quý 1/2026
 
 # AI được phép. Không giải thích được mới là vấn đề.
 
-- **35%** buổi phỏng vấn ghi nhận ứng viên dùng AI (Greenhouse, 2026)
-- **91%** recruiter từng phát hiện hoặc nghi ngờ ứng viên gian dối
-- Vòng phỏng vấn trực tiếp: **~5%** vị trí năm 2024 → **~30%** năm 2025
-- **Hơn 25%** doanh nghiệp cho phép dùng AI khi phỏng vấn kỹ thuật
+- **35%** buổi phỏng vấn ghi nhận ứng viên dùng AI
+- **91%** recruiter nghi ngờ ứng viên gian dối
+- Vòng trực tiếp: **5%** vị trí → **30%**
+- **Hơn 25%** doanh nghiệp cho phép dùng AI khi thi kỹ thuật
 
-**Câu hỏi đào sâu mới là bài kiểm tra thật.**
+![AI xuất hiện trong vòng phỏng vấn như thế nào](images/charts/14-ai-interview.svg)
 
 <!-- SPEAKER NOTES — Slide 14 (~4 phút)
 - Sửa một hiểu nhầm phổ biến: doanh nghiệp không cố cấm AI. Họ cố tìm xem bạn có làm việc được khi AI sai hay không.
@@ -306,10 +305,13 @@ Thị trường Mỹ, quý 1/2026
 
 # Công cụ phát hiện không đáng tin, và không trung lập
 
-> Bảy công cụ phát hiện văn bản AI hàng đầu nhận nhầm văn bản tiếng Anh của người không bản ngữ là do máy tạo ra trong **61%** trường hợp. — Stanford
+- Văn bản người viết, tiếng Anh không bản ngữ, bị gắn nhãn AI: **61%**
+- Công cụ đang đoán. Còn lời giải thích của bạn thì không
+- Không dựng lại được thì đừng nộp
 
-**Đừng cố giấu việc mình dùng AI.**
-**Hãy làm cho từng dòng giải thích được và tái lập được.**
+**Đừng giấu việc dùng AI. Hãy làm từng dòng giải thích được.**
+
+![Tỷ lệ nhận nhầm của công cụ phát hiện văn bản AI](images/charts/15-detector-bias.svg)
 
 <!-- SPEAKER NOTES — Slide 15 (~3 phút)
 - Đây là slide quan trọng nhất với khán phòng này, và là điều họ sẽ không nghe ở chỗ khác.
@@ -330,7 +332,7 @@ Thị trường Mỹ, quý 1/2026
 - Đọc code không phải do mình viết
 - Nộp thực tập ngay từ bây giờ
 
-**63,1% thực tập sinh được chuyển thành nhân viên chính thức.**
+![Tỷ lệ thực tập sinh được chuyển thành nhân viên chính thức](images/charts/16-intern-conversion.svg)
 
 <!-- SPEAKER NOTES — Slide 16 (~4 phút)
 - Đổi giọng ở đây. Nửa đầu là chẩn đoán, nửa sau là đơn thuốc. Cụ thể và có mốc thời gian.
@@ -349,7 +351,9 @@ Thị trường Mỹ, quý 1/2026
 - Lấy được kỳ thực tập. Đây là nước đi đòn bẩy cao nhất
 - Ba buổi phỏng vấn thử trước buổi thật
 - Mỗi vị trí một CV, không dùng một CV cho tất cả
-- **79%** doanh nghiệp cân nhắc kinh nghiệm thực tập
+- Đưa dòng thực tập thành dòng mạnh nhất trên trang
+
+![Điều doanh nghiệp cân nhắc khi không lọc GPA](images/charts/17-nace-factors.svg)
 
 <!-- SPEAKER NOTES — Slide 17 (~4 phút)
 - Năm 4 không phải học thêm. Nó là chuyển những gì bạn biết thành thứ người lạ kiểm chứng được.
@@ -404,11 +408,12 @@ Thị trường Mỹ, quý 1/2026
 
 # 12 tuần tới
 
-- **Tuần 1–4:** nền tảng cộng một dự án, đã triển khai
-- **Tuần 5–8:** viết lại CV theo từng vị trí, dựng hồ sơ GitHub
-- **Tuần 9–12:** mỗi tuần mười hồ sơ, hai buổi phỏng vấn thử
+- Triển khai dự án ngay tuần 1, không phải tuần 12
+- Ghi lại từng hồ sơ — quy luật sẽ chỉ ra chỗ cần sửa
 
 **Mười hai tuần lặp lại nhàm chán thắng mười hai tháng lập kế hoạch.**
+
+![Lộ trình chuẩn bị 12 tuần](images/charts/20-sprint-plan.svg)
 
 <!-- SPEAKER NOTES — Slide 20 (~3 phút)
 - Biến buổi nói chuyện thành một lịch bắt đầu từ thứ Hai. Đây là slide người ta sẽ chụp lại.

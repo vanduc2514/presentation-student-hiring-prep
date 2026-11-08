@@ -31,6 +31,16 @@ npm run preview    # mở bản tiếng Anh
 
 Cần Node.js 20. Nếu dùng [mise](https://mise.jdx.dev/), chạy `mise install` trước.
 
+### Tạo lại biểu đồ
+
+Chín slide dùng biểu đồ ở card bên phải. Đây là SVG viết tay, không phải ảnh chụp, nên sắc nét ở mọi kích thước máy chiếu:
+
+```sh
+python3 scripts/create-charts.py
+```
+
+Đây là tài sản sinh tự động duy nhất được commit vào repo. Sửa ở file nguồn, đừng sửa trực tiếp các file `.svg`.
+
 | Tệp kết quả | Ngôn ngữ |
 |---|---|
 | `output/index.html` | Tiếng Anh |
@@ -44,6 +54,8 @@ Cần Node.js 20. Nếu dùng [mise](https://mise.jdx.dev/), chạy `mise instal
 | `slides/presentation.en.md` | Nội dung slide tiếng Anh |
 | `slides/presentation.vi.md` | Nội dung slide tiếng Việt |
 | `slides/images/` | Mã QR và icon |
+| `slides/images/charts/` | Biểu đồ SVG đã tạo |
+| `scripts/create-charts.py` | Script tạo biểu đồ |
 | `research/findings.md` | Nguồn dữ liệu cho từng con số trên slide |
 | `research/idea.md` | Ý tưởng, luận điểm và cấu trúc buổi nói chuyện |
 | `build.cjs` | Script build và theming |

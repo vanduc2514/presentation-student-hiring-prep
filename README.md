@@ -31,6 +31,16 @@ npm run preview    # open the English deck in the browser
 
 Requires Node.js 20. If you use [mise](https://mise.jdx.dev/), run `mise install` first.
 
+### Regenerating the charts
+
+Nine slides use a chart on the right-hand card. They are hand-authored SVG, not screenshots, so they stay sharp at any projection size:
+
+```sh
+python3 scripts/create-charts.py
+```
+
+These are the only generated assets committed to the repository. Edit the chart source, not the `.svg` files.
+
 | Output | Language |
 |---|---|
 | `output/index.html` | English |
@@ -44,6 +54,8 @@ Requires Node.js 20. If you use [mise](https://mise.jdx.dev/), run `mise install
 | `slides/presentation.en.md` | English slide source |
 | `slides/presentation.vi.md` | Vietnamese slide source |
 | `slides/images/` | QR codes and icons |
+| `slides/images/charts/` | Generated chart SVGs |
+| `scripts/create-charts.py` | Chart generator |
 | `research/findings.md` | Sourced statistics behind every claim in the deck |
 | `research/idea.md` | Talk concept, thesis, and structure |
 | `build.cjs` | Build script and theming |

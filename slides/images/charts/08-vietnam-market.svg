@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 620" width="520" height="620">
+<text x="28.0" y="176.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8ea2ba" text-anchor="start">Embedded</text>
+<text x="492.0" y="176.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#e9eef7" text-anchor="end">21.4</text>
+<rect x="28.0" y="192.0" width="464.0" height="8.0" rx="4" fill="#28394f"/>
+<rect x="28.0" y="192.0" width="413.7" height="8.0" rx="4" fill="#f5a524"/>
+<text x="28.0" y="266.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8ea2ba" text-anchor="start">Mobile</text>
+<text x="492.0" y="266.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#e9eef7" text-anchor="end">14.2</text>
+<rect x="28.0" y="282.0" width="464.0" height="8.0" rx="4" fill="#28394f"/>
+<rect x="28.0" y="282.0" width="274.5" height="8.0" rx="4" fill="#f5a524"/>
+<text x="28.0" y="356.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8ea2ba" text-anchor="start">Back-end</text>
+<text x="492.0" y="356.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#e9eef7" text-anchor="end">12.4</text>
+<rect x="28.0" y="372.0" width="464.0" height="8.0" rx="4" fill="#28394f"/>
+<rect x="28.0" y="372.0" width="239.7" height="8.0" rx="4" fill="#f5a524"/>
+<text x="28.0" y="446.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#8ea2ba" text-anchor="start">Full-stack</text>
+<text x="492.0" y="446.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#e9eef7" text-anchor="end">10.1</text>
+<rect x="28.0" y="462.0" width="464.0" height="8.0" rx="4" fill="#28394f"/>
+<rect x="28.0" y="462.0" width="195.3" height="8.0" rx="4" fill="#f5a524"/>
+<line x1="28.0" y1="492.0" x2="492.0" y2="492.0" stroke="#28394f" stroke-width="1"/>
+<text x="28.0" y="516.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#5b6e88" text-anchor="middle">0</text>
+<text x="221.3" y="516.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#5b6e88" text-anchor="middle">10</text>
+<text x="414.7" y="516.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#5b6e88" text-anchor="middle">20</text>
+<text x="28.0" y="544.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8ea2ba" text-anchor="start">Million VND per month</text>
+<text x="28.0" y="598.0" font-family="Avenir Next, Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#5b6e88" text-anchor="start" letter-spacing="0.09em">TALENTHERO · EMPLOYSOME · 2026</text>
+</svg>

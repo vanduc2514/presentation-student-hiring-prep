@@ -80,14 +80,12 @@ Your Name · Tech Talk · 2026
 
 <!--slide-attr x=600 y=2400 rotate=2 scale=1.0 -->
 
-# Only 4.5% of software postings are entry-level
+# One posting in 22
 
-US market, Q1 2026
+- Senior roles are **69.3%** of the market
+- Entry-level fell **6.3%** while senior rose **13.5%**
 
-- Senior roles: **69.3%** of all postings
-- Entry-level postings: **−6.3%** while senior **+13.5%**
-- Workers aged 22–25 in AI-exposed roles: **19% below trend**
-- Workers aged 35–49 in the same roles: **+6–9%**
+![Share of software postings by seniority](images/charts/05-posting-mix.svg)
 
 <!-- SPEAKER NOTES — Slide 5 (~3 min)
 - Source: Indeed Hiring Lab, Q1 2026. Senior roles are 69.3% of software postings; entry-level is 4.5%.
@@ -102,13 +100,13 @@ US market, Q1 2026
 
 # The first rung got shorter
 
-> "Entry-level work did not disappear. It was absorbed into the job of the person above it."
-
 - AI writes **26.9%** of merged production code
-- **45%** of AI-generated code introduces an OWASP Top 10 flaw
-- Developers were **19% slower** with AI while believing they were **20% faster**
+- **45%** of AI-generated code ships an OWASP Top 10 flaw
+- Developers were **19% slower** with AI, believing they were faster
 
 **The work moved up. It did not move away.**
+
+![Employment change for young versus experienced workers](images/charts/06-cohort-split.svg)
 
 <!-- SPEAKER NOTES — Slide 6 (~3 min)
 - This is the reframe of the whole talk. If they take one slide home, take this one.
@@ -146,12 +144,13 @@ US market, Q1 2026
 
 # Vietnam is not the same market
 
-- **66.1%** of companies increased IT headcount in 2025
-- **69.6%** plan to expand in 2026
-- **73%** adopted AI — priorities shifted to problem-solving, adaptability, collaboration
-- Fresher bands: **10–14M VND/month**
+- **66.1%** of companies grew IT headcount in 2025
+- **69.6%** plan to expand again in 2026
+- Fresher pay: **10–14M VND** per month
 
 **The bar is higher. The door is not closed.**
+
+![Vietnam hiring growth and fresher salary by track](images/charts/08-vietnam-market.svg)
 
 <!-- SPEAKER NOTES — Slide 8 (~2 min)
 - Essential balance after the US data. ITviec's Vietnam IT Salary & Recruitment Market Report 2025-2026 surveyed 1,839 people across professionals, freelancers, students, HR leaders and executives.
@@ -167,14 +166,14 @@ US market, Q1 2026
 
 # The funnel, honestly
 
-| Stage | Reality |
-|---|---|
-| Applications per hire | **291** |
-| Applications that reach an interview | **3.6–4.7%** |
-| First CV skim | **7.4 seconds** |
-| Recruiters using ATS filters | **99.7%** |
+- **291** applications for every hire
+- **3.6–4.7%** reach an interview
+- **7.4 seconds** is the first CV skim
+- **99.7%** of recruiters filter in the ATS
 
 **You are not being judged. You are being sorted.**
+
+![Applications shrinking to interviews and offers](images/charts/09-funnel.svg)
 
 <!-- SPEAKER NOTES — Slide 9 (~3 min)
 - Walk the funnel from the company's side, because that is the view they have never seen.
@@ -285,12 +284,12 @@ US market, Q1 2026
 
 # AI is allowed. Not being able to explain it is not.
 
-- **35%** of interviews show candidates using AI (Greenhouse, 2026)
-- **91%** of recruiters have spotted or suspected deception
-- In-person rounds: **~5%** of roles in 2024 → **~30%** in 2025
-- **>25%** of employers now allow AI in technical interviews
+- **35%** of interviews show candidates using AI
+- **91%** of recruiters suspect deception
+- In-person rounds: **5%** of roles → **30%**
+- **>25%** of employers now allow AI in technical tests
 
-**The follow-up question is the real exam.**
+![How AI shows up in the interview loop](images/charts/14-ai-interview.svg)
 
 <!-- SPEAKER NOTES — Slide 14 (~4 min)
 - Correct a widespread misunderstanding: companies are not trying to ban AI. They are trying to find out whether you can work without it when it fails.
@@ -306,10 +305,13 @@ US market, Q1 2026
 
 # Detection is unreliable, and it is not neutral
 
-> Seven leading AI-text detectors misclassified non-native English writing as machine-generated **61%** of the time. — Stanford
+- Human-written, non-native English flagged as AI: **61%**
+- The detector is guessing. Your explanation is not
+- If you cannot rebuild it, do not submit it
 
-**Do not try to hide your AI use.**
-**Make every line explainable and reproducible.**
+**Do not hide your AI use. Make every line explainable.**
+
+![False positive rate of AI-text detectors on non-native English](images/charts/15-detector-bias.svg)
 
 <!-- SPEAKER NOTES — Slide 15 (~3 min)
 - This is the slide that matters most for this room, and it is the one they will not hear anywhere else.
@@ -330,7 +332,7 @@ US market, Q1 2026
 - Read code you did not write
 - Apply for your first internship now
 
-**63.1% of interns convert to full-time.**
+![Intern to full-time conversion rate](images/charts/16-intern-conversion.svg)
 
 <!-- SPEAKER NOTES — Slide 16 (~4 min)
 - Shift tone here. The first half was diagnosis; the second half is prescription. Be concrete and dated.
@@ -349,7 +351,9 @@ US market, Q1 2026
 - Get the internship. It is the highest-leverage move available
 - Three mock interviews before the real one
 - One CV per role, not one CV for everything
-- **79%** of employers weigh industry internships
+- Make the internship line the strongest on the page
+
+![What employers weigh when GPA is not screened](images/charts/17-nace-factors.svg)
 
 <!-- SPEAKER NOTES — Slide 17 (~4 min)
 - Year 4 is not about learning more. It is about converting what you know into things a stranger can verify.
@@ -404,11 +408,12 @@ US market, Q1 2026
 
 # The next 12 weeks
 
-- **Weeks 1–4:** fundamentals plus one project, deployed
-- **Weeks 5–8:** rewrite the CV per role, build the GitHub profile
-- **Weeks 9–12:** ten applications a week, two mock interviews
+- Start with deployment in week 1, not week 12
+- Track every application — the pattern tells you what to fix
 
 **Twelve weeks of boring repetition beats twelve months of planning.**
+
+![The 12-week preparation plan](images/charts/20-sprint-plan.svg)
 
 <!-- SPEAKER NOTES — Slide 20 (~3 min)
 - Convert the talk into a calendar they can start on Monday. This is the slide people photograph.
