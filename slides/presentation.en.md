@@ -30,6 +30,8 @@ Your Name · Tech Talk · 2026
 
 **So why is nobody calling?**
 
+![A candidate working alone at a laptop](images/photos/laptop-alone.jpg)
+
 <!-- SPEAKER NOTES — Slide 2 (~2 min)
 - Read both lines and stop. This is the whole room's inner monologue.
 - Ask for a show of hands: who has sent more than ten applications this semester? Who has had more than one interview? The gap between those two hands is the talk.
@@ -130,6 +132,8 @@ Your Name · Tech Talk · 2026
 - Verify code you did not write
 - Ask for help at the right moment
 
+![Someone explaining a decision at a whiteboard](images/photos/whiteboard-explain.jpg)
+
 <!-- SPEAKER NOTES — Slide 7 (~3 min)
 - Translate the reframe into skills they can practise this month. These four are the actual content of the interview.
 - Decomposition: interviewers watch how you split an ambiguous requirement. Say your plan out loud before you type.
@@ -196,6 +200,8 @@ Your Name · Tech Talk · 2026
 
 **One page. Numbers, not adjectives. Keywords that match the role.**
 
+![Stacks of paper files awaiting review](images/photos/paper-stacks.jpg)
+
 <!-- SPEAKER NOTES — Slide 10 (~4 min)
 - This slide is where the audience relaxes, because it removes a fear and replaces it with an instruction.
 - 92% of ATS platforms rank rather than reject (Enhancv 2025, 25 recruiters across 10+ platforms). But ranking 150th of 180 candidates is the same outcome as rejection. That is the trap.
@@ -220,7 +226,9 @@ Your Name · Tech Talk · 2026
 - Ownership
 - Motivation and domain fit
 
-**You are scored on all eight. Most candidates prepare for two.**
+**You are scored on all eight. Most prepare for two.**
+
+![A checklist being ticked by hand](images/photos/scorecard-form.jpg)
 
 <!-- SPEAKER NOTES — Slide 11 (~4 min)
 - Show them the artifact. Every structured hiring process has a scorecard with competency rows and anchored levels.
@@ -394,6 +402,8 @@ Your Name · Tech Talk · 2026
 | One deployed project | You can ship, not just follow a tutorial |
 | A README with decisions | You can explain a trade-off |
 | Internship or referral | Someone trusted you with real work |
+
+![Code on a monitor](images/photos/code-screen.jpg)
 
 <!-- SPEAKER NOTES — Slide 19 (~4 min)
 - This is the take-home artifact of the talk. Five things, each proving something different. Most candidates have one and a half.

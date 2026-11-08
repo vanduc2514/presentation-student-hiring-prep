@@ -352,6 +352,30 @@ body {
   object-fit: contain;
 }
 
+/* ── PHOTO CARDS ────────────────────────────────────────────────────
+ * Charts are SVG and stay framed inside the dark panel. Photographs are
+ * JPEG and run full-bleed, cropped to the panel, so the image reads as the
+ * slide's surface rather than a picture hanging on a wall. */
+.step-media:has(img[src^="data:image/jpeg"]) {
+  padding: 0;
+}
+
+.step-media:has(img[src^="data:image/jpeg"]) p {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.step-media img[src^="data:image/jpeg"] {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  border-radius: 0;
+  object-fit: cover;
+}
+
 /* ── RESPONSIVE ────────────────────────────────────────────────────── */
 @media (max-width: 900px) {
   .step {

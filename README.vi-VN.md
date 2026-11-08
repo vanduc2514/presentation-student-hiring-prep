@@ -48,6 +48,16 @@ python3 scripts/create-charts.py
 
 Script tạo cả hai bộ. Sửa ở file nguồn và bảng `STRINGS` trong đó, đừng sửa trực tiếp các file `.svg`.
 
+### Tạo lại ảnh
+
+Năm slide dùng ảnh chụp, tràn kín card bên phải:
+
+```sh
+python3 scripts/prepare-photos.py
+```
+
+Script tải ảnh gốc, cắt giữa theo tỉ lệ của card, rồi áp một lớp xử lý ấm và giảm bão hòa để ảnh cùng tông với các card giấy. Toàn bộ ảnh là **CC0 1.0**, nguồn và tác giả được ghi trong [`slides/images/photos/CREDITS.md`](slides/images/photos/CREDITS.md).
+
 | Tệp kết quả | Ngôn ngữ |
 |---|---|
 | `output/index.html` | Tiếng Anh |
@@ -61,8 +71,10 @@ Script tạo cả hai bộ. Sửa ở file nguồn và bảng `STRINGS` trong đ
 | `slides/presentation.en.md` | Nội dung slide tiếng Anh |
 | `slides/presentation.vi.md` | Nội dung slide tiếng Việt |
 | `slides/images/` | Mã QR và icon |
-| `slides/images/charts/` | Biểu đồ SVG đã tạo |
+| `slides/images/charts/` | Biểu đồ SVG, mỗi ngôn ngữ một bộ |
+| `slides/images/photos/` | Ảnh đã xử lý kèm `CREDITS.md` |
 | `scripts/create-charts.py` | Script tạo biểu đồ |
+| `scripts/prepare-photos.py` | Script tải và xử lý ảnh |
 | `research/findings.md` | Nguồn dữ liệu cho từng con số trên slide |
 | `research/idea.md` | Ý tưởng, luận điểm và cấu trúc buổi nói chuyện |
 | `build.cjs` | Script build và theming |

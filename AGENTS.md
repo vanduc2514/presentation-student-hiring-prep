@@ -10,6 +10,19 @@ It has four sections: the AI-era hiring picture, the process and evaluation crit
 
 All statistics must trace back to `research/findings.md`, which also records which widely repeated claims were deliberately excluded. Personal Tech Lead stories are marked `[STORY: ...]` in speaker notes and are placeholders for the presenter.
 
+## Visual Assets
+
+Each slide that needs a visual carries exactly one: a chart or a photograph on the right-hand card. Both are generated, never hand-edited.
+
+| Asset | Source of truth | Command |
+|---|---|---|
+| Charts (9 slides) | `scripts/create-charts.py` | `python3 scripts/create-charts.py` |
+| Photos (5 slides) | `scripts/prepare-photos.py` | `python3 scripts/prepare-photos.py` |
+
+- Charts are hand-authored SVG, one set per language under `slides/images/charts/{en,vi}/`, so numeric formatting matches the deck (`69.3%` vs `69,3%`).
+- Photos are JPEG, full-bleed cropped to the card, graded to a warm muted palette. All sources are CC0 1.0; provenance is in `slides/images/photos/CREDITS.md`.
+- Never add a second image to a slide: `build.cjs` splits only the first image into the media card.
+
 ## How to Build
 
 ```

@@ -30,6 +30,8 @@ Tên bạn · Tech Talk · 2026
 
 **Vậy tại sao không ai gọi?**
 
+![Một ứng viên làm việc một mình bên laptop](images/photos/laptop-alone.jpg)
+
 <!-- SPEAKER NOTES — Slide 2 (~2 phút)
 - Đọc cả hai dòng rồi dừng. Đây chính là độc thoại trong đầu của cả khán phòng.
 - Giơ tay: ai đã nộp hơn mười chỗ học kỳ này? Ai đã có hơn một buổi phỏng vấn? Khoảng cách giữa hai bàn tay đó là toàn bộ nội dung của buổi nói chuyện.
@@ -130,6 +132,8 @@ Tên bạn · Tech Talk · 2026
 - Kiểm chứng code không phải do bạn viết
 - Biết lúc nào nên nhờ giúp
 
+![Người trình bày giải thích quyết định trên bảng trắng](images/photos/whiteboard-explain.jpg)
+
 <!-- SPEAKER NOTES — Slide 7 (~3 phút)
 - Chuyển cách định khung thành kỹ năng họ luyện được ngay tháng này. Bốn điều này chính là nội dung thật của buổi phỏng vấn.
 - Chia nhỏ: người phỏng vấn xem bạn tách một yêu cầu mơ hồ thành các bước thế nào. Nói kế hoạch thành tiếng trước khi gõ.
@@ -196,6 +200,8 @@ Tên bạn · Tech Talk · 2026
 
 **Một trang. Con số thay cho tính từ. Từ khóa khớp vị trí.**
 
+![Những chồng hồ sơ giấy đang chờ được xem](images/photos/paper-stacks.jpg)
+
 <!-- SPEAKER NOTES — Slide 10 (~4 phút)
 - Slide này làm khán phòng nhẹ đi, vì nó gỡ một nỗi sợ và thay bằng một chỉ dẫn.
 - 92% nền tảng ATS xếp hạng chứ không loại (Enhancv 2025, 25 recruiter trên hơn 10 nền tảng). Nhưng đứng thứ 150 trong 180 ứng viên thì kết quả giống hệt bị loại. Cái bẫy nằm ở đó.
@@ -220,7 +226,9 @@ Tên bạn · Tech Talk · 2026
 - Tinh thần làm chủ
 - Động lực và mức phù hợp với lĩnh vực
 
-**Bạn được chấm cả tám ô. Phần lớn ứng viên chỉ chuẩn bị hai.**
+**Chấm cả tám ô. Phần lớn chỉ chuẩn bị hai.**
+
+![Một danh sách tiêu chí đang được đánh dấu bằng tay](images/photos/scorecard-form.jpg)
 
 <!-- SPEAKER NOTES — Slide 11 (~4 phút)
 - Cho họ thấy vật thể thật. Mọi quy trình tuyển dụng có cấu trúc đều có một phiếu đánh giá với các hàng năng lực và mức mô tả rõ ràng.
@@ -394,6 +402,8 @@ Tên bạn · Tech Talk · 2026
 | Một dự án đã triển khai | Bạn ship được, không chỉ làm theo tutorial |
 | README có phần quyết định | Bạn giải thích được một đánh đổi |
 | Thực tập hoặc người giới thiệu | Ai đó đã tin bạn với việc thật |
+
+![Code hiển thị trên màn hình](images/photos/code-screen.jpg)
 
 <!-- SPEAKER NOTES — Slide 19 (~4 phút)
 - Đây là phần mang về của buổi nói chuyện. Năm thứ, mỗi thứ chứng minh một điều khác nhau. Phần lớn ứng viên có một và một nửa.

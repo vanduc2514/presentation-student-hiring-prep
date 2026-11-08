@@ -48,6 +48,16 @@ python3 scripts/create-charts.py
 
 The script writes both sets. Edit the chart source and the `STRINGS` table in that file, never the `.svg` files.
 
+### Regenerating the photos
+
+Five slides use a photograph, full-bleed in the right-hand card:
+
+```sh
+python3 scripts/prepare-photos.py
+```
+
+The script downloads each original, centre-crops it to the card's aspect ratio, and applies a warm muted grade so photos share the palette of the paper cards. All sources are **CC0 1.0** and recorded, with creators and source pages, in [`slides/images/photos/CREDITS.md`](slides/images/photos/CREDITS.md).
+
 | Output | Language |
 |---|---|
 | `output/index.html` | English |
@@ -61,8 +71,10 @@ The script writes both sets. Edit the chart source and the `STRINGS` table in th
 | `slides/presentation.en.md` | English slide source |
 | `slides/presentation.vi.md` | Vietnamese slide source |
 | `slides/images/` | QR codes and icons |
-| `slides/images/charts/` | Generated chart SVGs |
+| `slides/images/charts/` | Generated chart SVGs, one set per language |
+| `slides/images/photos/` | Processed photographs plus `CREDITS.md` |
 | `scripts/create-charts.py` | Chart generator |
+| `scripts/prepare-photos.py` | Photo downloader and grader |
 | `research/findings.md` | Sourced statistics behind every claim in the deck |
 | `research/idea.md` | Talk concept, thesis, and structure |
 | `build.cjs` | Build script and theming |
