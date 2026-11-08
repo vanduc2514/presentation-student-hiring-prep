@@ -6,7 +6,7 @@ Talkshow 90 phút về những gì nhà tuyển dụng Fresher/Intern thực s�
 
 Xây dựng bằng [markpress](https://github.com/davidecaminati/markpress) và impress.js.
 
-**Bản chạy trực tiếp:** <https://vanduc2514.github.io/presentation-student-hiring-prep/index.vi.html> ([English](https://vanduc2514.github.io/presentation-student-hiring-prep/))
+**Bản chạy trực tiếp:** <https://vanduc2514.github.io/presentation-student-hiring-prep/> (tiếng Việt, mặc định) · [English](https://vanduc2514.github.io/presentation-student-hiring-prep/index.en.html)
 
 ## Bối cảnh
 
@@ -27,8 +27,8 @@ Buổi nói chuyện đứng về phía nhà tuyển dụng: hội đồng thự
 
 ```sh
 npm install
-npm run build      # → output/index.html và output/index.vi.html
-npm run preview    # mở bản tiếng Anh
+npm run build      # → output/index.html (tiếng Việt) và output/index.en.html (tiếng Anh)
+npm run preview    # mở bản tiếng Việt
 ```
 
 Cần Node.js 20. Nếu dùng [mise](https://mise.jdx.dev/), chạy `mise install` trước.
@@ -62,8 +62,8 @@ Script tải ảnh gốc, cắt giữa theo tỉ lệ của card, rồi áp mộ
 
 | Tệp kết quả | Ngôn ngữ |
 |---|---|
-| `output/index.html` | Tiếng Anh |
-| `output/index.vi.html` | Tiếng Việt |
+| `output/index.html` | Tiếng Việt (mặc định ở gốc site) |
+| `output/index.en.html` | Tiếng Anh |
 | `output/remote.html` | Remote trên điện thoại kèm speaker notes |
 
 ## Cấu trúc
@@ -106,7 +106,7 @@ Mọi con số trên slide đều truy được về `research/findings.md`, t�
 
 ## Triển khai
 
-Deck được publish lên GitHub Pages tại <https://vanduc2514.github.io/presentation-student-hiring-prep/index.vi.html>. Mỗi lần push lên `main`, `.github/workflows/deploy-pages.yml` sẽ build cả hai phiên bản ngôn ngữ, tạo PDF và deploy thư mục `output/`. Workflow cũng có thể chạy thủ công từ tab Actions.
+Deck được publish lên GitHub Pages tại <https://vanduc2514.github.io/presentation-student-hiring-prep/>. Mỗi lần push lên `main`, `.github/workflows/deploy-pages.yml` sẽ build cả hai phiên bản ngôn ngữ, tạo PDF và deploy thư mục `output/`. Workflow cũng có thể chạy thủ công từ tab Actions.
 
 Để xem cục bộ:
 

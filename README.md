@@ -6,7 +6,7 @@ A 90-minute campus talkshow on what Fresher and Intern hiring actually tests —
 
 Built with [markpress](https://github.com/davidecaminati/markpress) and impress.js.
 
-**Live deck:** <https://vanduc2514.github.io/presentation-student-hiring-prep/> ([Tiếng Việt](https://vanduc2514.github.io/presentation-student-hiring-prep/index.vi.html))
+**Live deck:** <https://vanduc2514.github.io/presentation-student-hiring-prep/> (Vietnamese, default) · [English](https://vanduc2514.github.io/presentation-student-hiring-prep/index.en.html)
 
 ## Background
 
@@ -27,8 +27,8 @@ This talk takes the employer's side of the table: what a hiring panel actually w
 
 ```sh
 npm install
-npm run build      # → output/index.html and output/index.vi.html
-npm run preview    # open the English deck in the browser
+npm run build      # → output/index.html (Vietnamese) and output/index.en.html (English)
+npm run preview    # open the Vietnamese deck in the browser
 ```
 
 Requires Node.js 20. If you use [mise](https://mise.jdx.dev/), run `mise install` first.
@@ -62,8 +62,8 @@ The script downloads each original, centre-crops it to the card's aspect ratio, 
 
 | Output | Language |
 |---|---|
-| `output/index.html` | English |
-| `output/index.vi.html` | Vietnamese |
+| `output/index.html` | Vietnamese (default at the site root) |
+| `output/index.en.html` | English |
 | `output/remote.html` | Phone remote with live speaker notes |
 
 ## Contents

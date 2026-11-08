@@ -24,8 +24,8 @@ const markpress = require("markpress");
 const INPUT_EN = path.resolve(__dirname, "slides/presentation.en.md");
 const INPUT_VI = path.resolve(__dirname, "slides/presentation.vi.md");
 const OUTPUT_DIR = path.resolve(__dirname, "output");
-const OUTPUT_EN = path.resolve(OUTPUT_DIR, "index.html");
-const OUTPUT_VI = path.resolve(OUTPUT_DIR, "index.vi.html");
+const OUTPUT_EN = path.resolve(OUTPUT_DIR, "index.en.html");
+const OUTPUT_VI = path.resolve(OUTPUT_DIR, "index.html");
 
 // ─────────────────────────────────────────────────────────────────────────────
 // ASSET PATHS
@@ -85,8 +85,8 @@ const GITHUB_BADGE_HTML = `
 // LANGUAGE SWITCHER
 // ─────────────────────────────────────────────────────────────────────────────
 const LANG_SWITCHER = {
-  en: '<a id="lang-switcher" href="./index.vi.html" title="Switch to Ti\u1ebfng Vi\u1ec7t">\u{1F1FB}\u{1F1F3} Ti\u1ebfng Vi\u1ec7t</a>',
-  vi: '<a id="lang-switcher" href="./index.html" title="Switch to English">\u{1F1EC}\u{1F1E7} English</a>',
+  en: '<a id="lang-switcher" href="./index.html" title="Switch to Ti\u1ebfng Vi\u1ec7t">\u{1F1FB}\u{1F1F3} Ti\u1ebfng Vi\u1ec7t</a>',
+  vi: '<a id="lang-switcher" href="./index.en.html" title="Switch to English">\u{1F1EC}\u{1F1E7} English</a>',
 };
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -171,10 +171,12 @@ const buildPresentation = async (input, output, langSwitcherHtml, pdfSuffix) => 
       return match;
     });
 
-  stripped = stripped.replace(
-    /(<div[^>]*id=["']impress["'][^>]*)(>)/,
-    '$1 data-transition-duration="200"$2',
-  );
+  stripped = stripped
+    .replace(/<html lang="[^"]*">/, `<html lang="${pdfSuffix || "en"}">`)
+    .replace(
+      /(<div[^>]*id=["']impress["'][^>]*)(>)/,
+      '$1 data-transition-duration="200"$2',
+    );
 
   stripped = applyHighlighting(stripped);
   stripped = wrapImageSlides(stripped);
@@ -246,6 +248,9 @@ if (require.main === module) {
   // Copy presentation assets to output root
   copyFile(PRESENTATION_CSS_FILE, path.join(OUTPUT_DIR, "presentation.css"));
   copyFile(PRESENTATION_JS_FILE, path.join(OUTPUT_DIR, "presentation.js"));
+
+  // Drop outputs renamed by previous builds so stale files are not published
+  fs.rmSync(path.join(OUTPUT_DIR, "index.vi.html"), { force: true });
 
   Promise.all([
     buildPresentation(INPUT_EN, OUTPUT_EN, LANG_SWITCHER.en, "en"),
