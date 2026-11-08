@@ -1,8 +1,9 @@
 name: Deploy GitHub Pages
 
+# Manual only while the repository is private: GitHub Pages is not available for
+# private repositories on this plan, so a push trigger would fail on every commit.
+# Re-add `push: branches: [main]` once the repository is public.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:

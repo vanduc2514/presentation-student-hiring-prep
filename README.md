@@ -73,9 +73,22 @@ Every number on a slide is traceable to `research/findings.md`, which also lists
 
 ## Deploy
 
-The included workflow (`deploy-pages.yml`) builds and deploys on every push to `main`.
+The deck is currently built and served locally:
 
-Enable GitHub Pages: **Settings** → **Pages** → **Source**: `GitHub Actions`.
+```sh
+npm run build && npm run preview
+```
+
+The included workflow (`deploy-pages.yml`) is **manual-only** while the repository is private, because GitHub Pages is not available for private repositories on this plan. Once the repository is public, re-add the `push` trigger to enable auto-deploy:
+
+```yaml
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+```
+
+Then enable GitHub Pages: **Settings** → **Pages** → **Source**: `GitHub Actions`.
 
 ## Writing slides
 

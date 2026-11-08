@@ -73,9 +73,22 @@ Mọi con số trên slide đều truy được về `research/findings.md`, t�
 
 ## Triển khai
 
-Workflow `deploy-pages.yml` build và deploy mỗi lần push lên `main`.
+Hiện tại deck được build và chạy cục bộ:
 
-Bật GitHub Pages: **Settings** → **Pages** → **Source**: `GitHub Actions`.
+```sh
+npm run build && npm run preview
+```
+
+Workflow `deploy-pages.yml` đang ở chế độ **chạy thủ công** vì repository đang để private, và GitHub Pages không khả dụng cho repository private trên gói hiện tại. Khi chuyển repository sang public, thêm lại trigger `push` để tự động deploy:
+
+```yaml
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+```
+
+Sau đó bật GitHub Pages: **Settings** → **Pages** → **Source**: `GitHub Actions`.
 
 ## Viết slide
 
