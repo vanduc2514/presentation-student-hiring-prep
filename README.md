@@ -6,6 +6,8 @@ A 90-minute campus talkshow on what Fresher and Intern hiring actually tests —
 
 Built with [markpress](https://github.com/davidecaminati/markpress) and impress.js.
 
+**Live deck:** <https://vanduc2514.github.io/presentation-student-hiring-prep/> ([Tiếng Việt](https://vanduc2514.github.io/presentation-student-hiring-prep/index.vi.html))
+
 ## Background
 
 The IT job market is more competitive and companies are stricter when hiring Freshers and Interns. Knowing how to code and having a clean CV is no longer enough to get an interview.
@@ -104,22 +106,13 @@ Every number on a slide is traceable to `research/findings.md`, which also lists
 
 ## Deploy
 
-The deck is currently built and served locally:
+The deck is published to GitHub Pages at <https://vanduc2514.github.io/presentation-student-hiring-prep/>. Every push to `main` triggers `.github/workflows/deploy-pages.yml`, which builds both language versions, generates the PDFs, and deploys `output/`. The workflow can also be run manually from the Actions tab.
+
+To preview locally:
 
 ```sh
 npm run build && npm run preview
 ```
-
-The included workflow (`deploy-pages.yml`) is **manual-only** while the repository is private, because GitHub Pages is not available for private repositories on this plan. Once the repository is public, re-add the `push` trigger to enable auto-deploy:
-
-```yaml
-on:
-  push:
-    branches: [main]
-  workflow_dispatch:
-```
-
-Then enable GitHub Pages: **Settings** → **Pages** → **Source**: `GitHub Actions`.
 
 ## Writing slides
 

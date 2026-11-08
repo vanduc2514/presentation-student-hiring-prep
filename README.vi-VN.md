@@ -6,6 +6,8 @@ Talkshow 90 phút về những gì nhà tuyển dụng Fresher/Intern thực s�
 
 Xây dựng bằng [markpress](https://github.com/davidecaminati/markpress) và impress.js.
 
+**Bản chạy trực tiếp:** <https://vanduc2514.github.io/presentation-student-hiring-prep/index.vi.html> ([English](https://vanduc2514.github.io/presentation-student-hiring-prep/))
+
 ## Bối cảnh
 
 Thị trường IT ngày càng cạnh tranh, doanh nghiệp tuyển Fresher/Intern khắt khe hơn. Biết code và có CV tốt không còn đủ để được gọi phỏng vấn.
@@ -104,22 +106,13 @@ Mọi con số trên slide đều truy được về `research/findings.md`, t�
 
 ## Triển khai
 
-Hiện tại deck được build và chạy cục bộ:
+Deck được publish lên GitHub Pages tại <https://vanduc2514.github.io/presentation-student-hiring-prep/index.vi.html>. Mỗi lần push lên `main`, `.github/workflows/deploy-pages.yml` sẽ build cả hai phiên bản ngôn ngữ, tạo PDF và deploy thư mục `output/`. Workflow cũng có thể chạy thủ công từ tab Actions.
+
+Để xem cục bộ:
 
 ```sh
 npm run build && npm run preview
 ```
-
-Workflow `deploy-pages.yml` đang ở chế độ **chạy thủ công** vì repository đang để private, và GitHub Pages không khả dụng cho repository private trên gói hiện tại. Khi chuyển repository sang public, thêm lại trigger `push` để tự động deploy:
-
-```yaml
-on:
-  push:
-    branches: [main]
-  workflow_dispatch:
-```
-
-Sau đó bật GitHub Pages: **Settings** → **Pages** → **Source**: `GitHub Actions`.
 
 ## Viết slide
 
