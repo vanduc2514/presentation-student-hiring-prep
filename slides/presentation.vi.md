@@ -12,7 +12,7 @@ markpress-opt-->
 
 ## Nhà tuyển dụng Fresher & Intern thực sự tìm kiếm điều gì — và lộ trình chuẩn bị từ năm 3 đến offer đầu tay
 
-Tên bạn · Tech Talk · 2026
+Nguyễn Văn Đức · Tech Talk · 2026
 
 <!-- SPEAKER NOTES — Slide 1 (~1 phút)
 [STORY: Lý do mở buổi chia sẻ này — khoảnh khắc nhận ra rất nhiều bạn sinh viên giỏi, code tốt nhưng vẫn trượt phỏng vấn chỉ vì những lý do chưa từng được ai chỉ cho]
@@ -66,7 +66,7 @@ Tên bạn · Tech Talk · 2026
 |---|---|
 | "Hệ thống ATS tự loại 75% CV" | 92% ATS chỉ chấm điểm xếp hạng, không tự đánh rớt hồ sơ |
 | "Nhà tuyển dụng chỉ nhìn CV trong 6 giây" | 7,4 giây là thời gian lướt qua lần đầu, không phải lúc chốt loại |
-| "AI đã xóa sổ hết việc làm Junior" | Thị phần tin tuyển Entry-level giảm xuống 4,5%, chứ không về số 0 |
+| "AI đã xóa sổ hết việc làm Junior" | Thị phần tin tuyển Entry-level (tại Mỹ) giảm xuống 4,5%, chứ không về số 0 |
 
 **Con số thực sự đáng quan tâm:** Cần trung bình 291 hồ sơ ứng tuyển mới chốt được 1 vị trí.
 
@@ -91,7 +91,7 @@ Tên bạn · Tech Talk · 2026
 
 <!-- SPEAKER NOTES — Slide 5 (~3 phút)
 - Nguồn số liệu: Báo cáo Indeed Hiring Lab, Quý 1/2026. Các vị trí Senior hiện chiếm tới 69,3% thị trường việc làm ngành phần mềm; trong khi Entry-level chỉ vỏn vẹn 4,5% — nghĩa là cứ khoảng 22 tin tuyển dụng mới có 1 tin dành cho người chưa có kinh nghiệm.
-- Nghiên cứu "Canaries in the Coal Mine?" của Stanford Digital Economy Lab phân tích bảng lương ADP từ 3,5 đến 5 triệu lao động mỗi tháng: Nhóm lao động trẻ 22–25 tuổi trong các ngành tiếp xúc nhiều với AI bị sụt giảm việc làm tương đối tới 19% so với nhóm ít bị ảnh hưởng. Ngược lại, nhóm 35–49 tuổi cùng ngành lại tăng trưởng từ 6 đến 9%.
+- Hơn 71% sự phục hồi việc làm trong năm qua đến từ nhóm Senior; thị trường ưu tiên tuyển người có kinh nghiệm để gánh vác ngay.
 - Thẳng thắn và khách quan: Đây là dữ liệu từ thị trường Mỹ, chưa phải Việt Nam. Đừng phóng đại quá mức, nhưng xu hướng dịch chuyển cấu trúc là điều hoàn toàn có thật.
 - Đúc kết cốt lõi: Nấc thang đầu tiên để các bạn bước chân vào ngành giờ đã hẹp hơn đáng kể so với 5 năm trước. Đây là hiện thực cần nhìn nhận nghiêm túc, không phải để làm các bạn nản lòng.
 -->
@@ -111,11 +111,11 @@ Tên bạn · Tech Talk · 2026
 ![Thay đổi việc làm giữa lao động trẻ và lao động có kinh nghiệm](images/charts/vi/06-cohort-split.svg)
 
 <!-- SPEAKER NOTES — Slide 6 (~3 phút)
-- Đây là slide định hình lại góc nhìn cho toàn bộ buổi chia sẻ. Nếu khán phòng chỉ nhớ đúng một slide, hãy nhớ slide này.
-- Những việc ngày xưa từng dùng để đào tạo một bạn mới vào nghề — gõ code boilerplate lặp đi lặp lại, dựng form đơn giản, fix những con bug vụn vặt — bây giờ AI làm xong trong chớp mắt. Thứ duy nhất còn lại mà con người phải gánh là năng lực phán đoán và thẩm định.
+- Chỉ vào biểu đồ bên phải: Nghiên cứu "Canaries in the Coal Mine?" của Stanford Digital Economy Lab (dữ liệu bảng lương ADP từ 3,5–5 triệu lao động): Nhóm lao động trẻ 22–25 tuổi trong các ngành tiếp xúc nhiều với AI bị sụt giảm việc làm tương đối tới 19%. Ngược lại, nhóm 35–49 tuổi cùng ngành lại tăng trưởng 7,5%.
+- Đây chính là slide định hình lại góc nhìn cho toàn bộ buổi chia sẻ: Những việc ngày xưa từng dùng để đào tạo người mới — code boilerplate, dựng form, fix bug vụn — bây giờ AI làm xong trong chớp mắt. Thứ duy nhất còn lại mà con người phải gánh là năng lực phán đoán và thẩm định.
 - Con số 26,9% code được merge lên production do AI sinh ra là số liệu đo lường viễn thông độc lập, không phải chiêu trò tiếp thị của các hãng AI.
-- Nghiên cứu của Veracode năm 2025: 45% mẫu code do AI tạo ra mắc các lỗi bảo mật thuộc danh sách OWASP Top 10. Kinh nghiệm review code thực tế của tôi cũng y như vậy: code AI viết nhìn qua rất nuột, biên dịch không lỗi, nhưng soi kỹ thì thiếu kiểm tra phân quyền và validate đầu vào.
-- Thử nghiệm lâm sàng có đối chứng của METR năm 2025: Các kỹ sư dày dạn kinh nghiệm thực chất làm chậm hơn 19% khi dùng AI, trong khi họ đinh ninh rằng mình làm nhanh hơn 20%. Sự ảo tưởng giữa cảm giác tự tin và hiệu quả thực tế chính là cái bẫy mới.
+- Nghiên cứu của Veracode năm 2025: 45% mẫu code do AI tạo ra mắc các lỗi bảo mật thuộc danh sách OWASP Top 10. Code AI viết nhìn qua rất nuột, biên dịch không lỗi, nhưng soi kỹ thì thiếu kiểm tra phân quyền và validate đầu vào.
+- Thử nghiệm lâm sàng có đối chứng của METR năm 2025: Các kỹ sư dày dạn kinh nghiệm thực chất làm chậm hơn 19% khi dùng AI, trong khi họ đinh ninh rằng mình làm nhanh hơn 20%. Lưu ý: con số -19% trên biểu đồ là mức sụt giảm việc làm của nhóm lao động trẻ; còn 19% trên gạch đầu dòng là tốc độ làm việc bị chậm đi. Sự ảo tưởng giữa cảm giác tự tin và hiệu quả thực tế chính là cái bẫy mới.
 - [STORY: Một lần review đoạn code AI viết trông cực kỳ hợp lý nhưng thực chất lại ẩn chứa lỗi bảo mật hoặc logic ngầm]
 -->
 
@@ -160,7 +160,7 @@ Tên bạn · Tech Talk · 2026
 - Cần mang lại cái nhìn cân bằng sau những số liệu có phần ảm đạm từ thị trường Mỹ. Báo cáo Thị trường Tuyển dụng & Lương IT 2025-2026 của ITviec khảo sát 1.839 chuyên gia, freelancer, sinh viên IT, lãnh đạo HR và quản lý cấp cao.
 - 66,1% doanh nghiệp tăng nhân sự IT trong năm 2025, và 69,6% dự kiến mở rộng trong năm 2026. Thị trường Việt Nam vẫn đang tăng trưởng, nhưng tuyển dụng có chọn lọc kỹ càng hơn.
 - 73% doanh nghiệp đã ứng dụng AI vào quy trình làm việc, và điều này thay đổi trực tiếp tiêu chí sàng lọc ứng viên: họ ưu tiên khả năng giải quyết vấn đề, tính thích ứng và kỹ năng phối hợp làm việc nhóm. Doanh nghiệp không hề tuyển ít người đi — mà họ đang tìm kiếm những con người có tư duy khác trước.
-- Cung cấp dải lương cụ thể để các bạn không phải đoán mò: Fresher Back-end dao động quanh 12,4 triệu; Full-stack khoảng 10,1 triệu; Mobile khoảng 14,2 triệu VNĐ. Hãy nhìn vào dải lương phổ biến, đừng nhìn vào những mức trần cá biệt trên mạng.
+- Cung cấp dải lương cụ thể để các bạn không phải đoán mò: Fresher Back-end dao động quanh 12,4 triệu; Full-stack khoảng 10,1 triệu; Mobile khoảng 14,2 triệu VNĐ. Lưu ý cột Lập trình nhúng (Embedded) đạt 21,4 triệu trên biểu đồ là do tính chất đặc thù phần cứng/firmware, còn với mảng phần mềm đại trà thì dải 10–14 triệu là mặt bằng phổ biến. Hãy nhìn vào dải lương phổ biến, đừng nhìn vào những mức trần cá biệt trên mạng.
 - Thông điệp muốn gửi gắm: Các bạn không hề đối mặt với một cánh cửa đóng chặt. Các bạn chỉ đang phải vượt qua một tiêu chuẩn cao hơn trong một thị trường vẫn đang rộng mở đón nhận người tài.
 -->
 
@@ -292,7 +292,7 @@ Tên bạn · Tech Talk · 2026
 
 # Được phép dùng AI — nhưng không làm chủ được code mới là thảm họa
 
-- **35%** buổi phỏng vấn ghi nhận ứng viên đang lén lút nhờ AI hỗ trợ
+- **35%** buổi phỏng vấn ghi nhận ứng viên có sử dụng AI hỗ trợ
 - **91%** nhà tuyển dụng nghi ngờ ứng viên gian lận hoặc phóng đại năng lực
 - Phỏng vấn trực tiếp (on-site) tăng vọt: Từ **5%** lên **30%** các vị trí
 - Hơn **25%** doanh nghiệp chủ động cho phép ứng viên dùng AI khi làm bài test kỹ thuật
@@ -356,7 +356,7 @@ Tên bạn · Tech Talk · 2026
 
 # Sinh viên năm 4: Biến năng lực thành bằng chứng thuyết phục
 
-- Giành bằng được một vị trí thực tập — đây là đòn bẩy giá trị nhất trước khi ra trường
+- Giành vị trí thực tập và tối ưu hóa để chuyển đổi thành offer chính thức
 - Trải qua ít nhất 3 buổi phỏng vấn thử (Mock interview) trước khi bước vào phỏng vấn thật
 - Tùy biến CV riêng cho từng vị trí, tuyệt đối không dùng 1 bản CV chung nộp đại trà
 - Biến phần kinh nghiệm thực tập thành điểm nhấn đắt giá và thuyết phục nhất trên CV
@@ -397,7 +397,7 @@ Tên bạn · Tech Talk · 2026
 
 | Minh chứng thực tế | Điều bạn chứng minh được với nhà tuyển dụng |
 |---|---|
-| Bản CV chỉn chu | Khả năng tóm tắt bản thân ấn tượng trong 7 giây lướt mắt |
+| Bản CV chỉn chu | Khả năng tóm tắt bản thân ấn tượng trong 7,4 giây lướt mắt |
 | Hồ sơ GitHub sạch sẽ | Code có tồn tại trong thực tế, và do chính bạn viết |
 | 1 dự án đã deploy chạy thật | Bạn biết đưa sản phẩm vào thực tế, chứ không chỉ dừng ở xem tutorial |
 | File README phân tích quyết định | Bạn có tư duy kỹ thuật và biết cân nhắc sự đánh đổi (trade-offs) |
@@ -418,7 +418,7 @@ Tên bạn · Tech Talk · 2026
 
 # Kế hoạch hành động 12 tuần tới
 
-- Bắt tay vào deploy dự án ngay từ tuần 1, đừng đợi đến tuần 12 mới đóng gói
+- Bắt tay vào deploy dự án ngay từ tuần 2, đừng đợi đến tuần 12 mới đóng gói
 - Ghi chép và theo dõi sát sao từng hồ sơ nộp đi — quy luật từ các con số sẽ chỉ ra chính xác bạn cần sửa ở khâu nào
 
 **12 tuần kiên trì làm những việc lặp lại nhàm chán ăn đứt 12 tháng chỉ ngồi lên kế hoạch trên giấy.**
