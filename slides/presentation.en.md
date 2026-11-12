@@ -258,6 +258,8 @@ Nguyen Van Duc · Tech Talk · 2026
 - Ability to explain your own code
 - Coachability under correction
 
+![Scorecard showing knockout criteria](images/photos/scorecard-form.jpg)
+
 <!-- SPEAKER NOTES — Slide 12 (~3 min)
 - Explain the mechanics learned from structured hiring playbooks: teams define a minimum total score plus mandatory minimums on specific competencies. A candidate at 26 out of 40 with a 2 on coachability is a no-hire.
 - This is the answer to "but I answered everything correctly". You can be right and still be rejected, for a reason outside the technical columns.
@@ -380,6 +382,8 @@ Nguyen Van Duc · Tech Talk · 2026
 - Ask for referrals before you ask for jobs
 - Prepare three stories you can tell in 90 seconds
 - Evaluate offers on learning, not only salary
+
+![Application tracking pipeline](images/photos/paper-stacks.jpg)
 
 <!-- SPEAKER NOTES — Slide 18 (~3 min)
 - The post-graduation phase has a different failure mode: random, emotional application instead of a managed pipeline.

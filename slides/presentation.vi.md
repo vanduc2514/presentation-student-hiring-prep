@@ -258,6 +258,8 @@ Nguyễn Văn Đức · Tech Talk · 2026
 - Khả năng hiểu sâu và tự tin giải thích từng dòng code của chính mình
 - Thái độ lắng nghe, cầu thị khi được người phỏng vấn chỉ ra điểm sai
 
+![Bảng chấm điểm tiêu chí loại trực tiếp](images/photos/scorecard-form.jpg)
+
 <!-- SPEAKER NOTES — Slide 12 (~3 phút)
 - Giải thích cơ chế vận hành từ cẩm nang tuyển dụng chuẩn hóa: Các đội ngũ kỹ thuật luôn thiết lập một ngưỡng tổng điểm tối thiểu, đi kèm với các mức sàn bắt buộc cho từng năng lực then chốt. Một ứng viên đạt tổng điểm 26/40 rất cao, nhưng điểm tiếp thu góp ý (coachability) chỉ nhận mức 2 thì kết luận cuối cùng vẫn dứt khoát là loại (no-hire).
 - Đây chính là lời giải đáp cho câu than thở quen thuộc: "Nhưng rõ ràng em giải đúng hết mọi bài tập kỹ thuật mà sao vẫn trượt?". Bạn hoàn toàn có thể giải đúng code nhưng vẫn bị từ chối thẳng thừng vì vướng phải những tiêu chí nằm ngoài cột kỹ thuật.
@@ -380,6 +382,8 @@ Nguyễn Văn Đức · Tech Talk · 2026
 - Tìm kiếm cơ hội giới thiệu nội bộ (Referral) trước khi nộp qua các cổng tuyển dụng công khai
 - Chuẩn bị sẵn 3 câu chuyện trải nghiệm thực tế kể gãy gọn trong vòng 90 giây
 - Đánh giá cơ hội nhận việc (offer) dựa trên tốc độ phát triển nghề nghiệp, đừng chỉ nhìn vào mức lương
+
+![Theo dõi quy trình ứng tuyển](images/photos/paper-stacks.jpg)
 
 <!-- SPEAKER NOTES — Slide 18 (~3 phút)
 - Sinh viên mới tốt nghiệp thường rơi vào một kiểu thất bại rất đặc trưng: Rải đơn một cách vô định, cảm tính và hoảng loạn, thay vì xem việc tìm kiếm công việc như một quy trình phễu dữ liệu cần quản lý.
